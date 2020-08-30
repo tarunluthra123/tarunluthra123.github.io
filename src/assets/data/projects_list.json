@@ -27,15 +27,15 @@
   },
   "3": {
     "title": "Github Explorer",
-    "description": "A Github Explorer web app to search and explore github user profiles using data fetched from Github REST API.",
+    "description": "A Github Explorer web app to search and explore github user profiles using data fetched from Github REST API. The page uses infinite scroll to display the list of repositories efficiently.",
     "githubUrl": "https://github.com/tarunluthra123/GithubExplorer-React",
     "projectUrl": "https://tarunluthra123.github.io/GithubExplorer-React/",
+    "icon": "git",
     "technologies": [
       "ReactJS",
       "REST API",
       "Github"
-    ],
-    "icon": "git"
+    ]
   },
   "4": {
     "title": "Tambola",
@@ -61,6 +61,17 @@
       "MongoDB",
       "JWTs",
       "REST APIs"
+    ]
+  },
+  "6": {
+    "title": "Troublemaker - Coding Blocks",
+    "description": "Added new features to Coding Blocks's MCQ Quiz generator portal.",
+    "githubUrl": "https://github.com/coding-blocks/trouble-maker-frontend",
+    "projectUrl": "http://troublemaker.codingblocks.com/",
+    "icon": "cb.png",
+    "technologies": [
+      "EmberJS",
+      "Ember Data"
     ]
   }
 }

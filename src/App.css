@@ -74,3 +74,22 @@
 .projectTitle {
     font-size: 150%;
 }
+
+.sectionTitle {
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+.sectionTitleContainer {
+    padding-bottom: 1%;
+}
+
+.educationTitle {
+    font-size: 140%;
+}
+
+.instituteName {
+    font-size: 100%;
+    padding-bottom: 0.5%;
+    padding-top: 1%;
+}

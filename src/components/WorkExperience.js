@@ -19,7 +19,9 @@ class WorkExperience extends Component {
     render() {
         return (
             <div className="container">
-                <h2><b>Work Experience</b></h2>
+                <div className={"container sectionTitleContainer"}>
+                    <b className="sectionTitle">Work Experience</b>
+                </div>
                 <ul>
                     {this.renderJobs()}
                 </ul>

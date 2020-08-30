@@ -3,27 +3,18 @@ import React, {Component} from 'react';
 const Images = require.context('../assets/', true)
 
 class Job extends Component {
-    constructor(props) {
-        super(props);
-        this.state = props.data
-        console.log(this.state)
-
-    }
-
     renderImage = () => {
-        let imageUrl = this.state.orgIcon
-        console.log("i=", imageUrl)
+        let imageUrl = this.props.data.orgIcon
         if (imageUrl) {
             let image = Images('./' + imageUrl)
             return <img src={image} height="50px"/>
         }
     }
 
-
     render() {
-        let {title, startDate, endDate, organisation, orgWebsite, description} = this.state
+        let {title, startDate, endDate, organisation, orgWebsite, description} = this.props.data
         return (
-            <div className="row container p-2 m-2">
+            <div className="row p-2 m-2">
                 <div className="col-1">
                     <a href={orgWebsite} target="_blank">{this.renderImage()}</a>
                 </div>

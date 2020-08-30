@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import * as Icons from "@fortawesome/free-solid-svg-icons"
-import '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/free-solid-svg-icons';
-import {Button} from 'semantic-ui-react'
+import {Button} from 'semantic-ui-react';
 
 class Project extends Component {
 
@@ -21,11 +19,9 @@ class Project extends Component {
     render() {
         let {title, description, githubUrl, projectUrl, icon} = this.props.data;
         return (
-            <div className="row container p-2 m-2">
+            <div className="row p-2 m-2">
                 <div className="col-1">
                     <br/>
-                    <i className="fab fa-git"/>
-                    <FontAwesomeIcon icon={['fab', 'coffee']}/>
                     <FontAwesomeIcon icon={Icons.faShoppingCart} size="lg"/>
                 </div>
                 <div className="col">

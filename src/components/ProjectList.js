@@ -19,7 +19,9 @@ class ProjectList extends Component {
     render() {
         return (
             <div className="container">
-                <h2><b>Projects</b></h2>
+                <div className="container sectionTitleContainer">
+                    <b className="sectionTitle">Projects</b>
+                </div>
                 <ul>
                     {this.renderProjectList()}
                 </ul>

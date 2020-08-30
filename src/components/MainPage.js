@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import {animateScroll as scroll, Element, Link} from 'react-scroll'
 import {Button, Nav, Navbar} from 'react-bootstrap';
+import TL_Logo from '../assets/TL.png'
 import AboutPage from "./AboutPage";
 import WorkExperience from "./WorkExperience";
 import ProjectList from "./ProjectList";
+import EducationList from "./EducationList";
 
 class MainPage extends Component {
     scrollToTop = () => {
@@ -17,7 +19,9 @@ class MainPage extends Component {
                     <Nav className="container-fluid row">
                         <Link activeClass="active" className="navLinks col" to="about" spy={true} smooth={true}
                               duration={500}>
-                            <Button variant="light">TL</Button>
+                            <Button variant="light">
+                                <img src={TL_Logo} alt={"TL"} height="50px"/>
+                            </Button>
                         </Link>
                         <Link activeClass="active" className="navLinks col" to="workExperience" spy={true}
                               smooth={true} duration={500}>
@@ -45,15 +49,17 @@ class MainPage extends Component {
                     </Element>
 
                     <Element name="workExperience" className="element">
+                        <br/><br/>
                         <WorkExperience/>
                     </Element>
 
                     <Element name="projectsList" className="element">
+                        <br/><br/>
                         <ProjectList/>
                     </Element>
 
                     <Element name="education" className="element">
-                        Education
+                        <EducationList/>
                     </Element>
 
                     <Element name="contactInfo" className="element">
