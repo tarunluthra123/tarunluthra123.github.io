@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import {animateScroll as scroll, Element, Link} from 'react-scroll'
 import {Button, Nav, Navbar} from 'react-bootstrap';
-
-const styles = {
-    fontFamily: 'sans-serif',
-    textAlign: 'center',
-};
+import AboutPage from "./AboutPage";
+import WorkExperience from "./WorkExperience";
+import ProjectList from "./ProjectList";
 
 class MainPage extends Component {
     scrollToTop = () => {
@@ -26,7 +24,7 @@ class MainPage extends Component {
                             <Button variant="light"> Work Experience</Button>
                         </Link>
                         <Link activeClass="active" className="navLinks col" to="projectsList" spy={true}
-                              smooth={true}  duration={500}>
+                              smooth={true} duration={500}>
                             <Button variant="light">Projects</Button>
                         </Link>
                         <Link activeClass="active" className="navLinks col" to="education" spy={true} smooth={true}
@@ -43,15 +41,15 @@ class MainPage extends Component {
                 <br/>
                 <div className="main">
                     <Element name="about" className="element">
-                        About
+                        <AboutPage/>
                     </Element>
 
                     <Element name="workExperience" className="element">
-                        Work Experience
+                        <WorkExperience/>
                     </Element>
 
                     <Element name="projectsList" className="element">
-                        Projects
+                        <ProjectList/>
                     </Element>
 
                     <Element name="education" className="element">

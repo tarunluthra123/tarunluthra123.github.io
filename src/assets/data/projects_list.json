@@ -1,0 +1,66 @@
+{
+  "1": {
+    "title": "Typing Speed Test",
+    "description": "Online typing speed test to measure the typing speed of a user accurately.",
+    "githubUrl": "https://github.com/tarunluthra123/Project-Typing-Speed-Test",
+    "projectUrl": "https://tarunluthra123.github.io/Project-Typing-Speed-Test/",
+    "icon": "keyboard",
+    "technologies": [
+      "HTML5",
+      "CSS",
+      "JQuery"
+    ]
+  },
+  "2": {
+    "title": "Shopping Website",
+    "description": "A shopping cart website where users can search for products, find their details and add or remove them from cart.",
+    "githubUrl": "https://github.com/tarunluthra123/Shopping-Website-Project",
+    "projectUrl": "https://shopping-cart-project123.herokuapp.com/",
+    "icon": "faShoppingCart",
+    "technologies": [
+      "HTML5",
+      "CSS",
+      "JQuery",
+      "ExpressJS",
+      "MySQL"
+    ]
+  },
+  "3": {
+    "title": "Github Explorer",
+    "description": "A Github Explorer web app to search and explore github user profiles using data fetched from Github REST API.",
+    "githubUrl": "https://github.com/tarunluthra123/GithubExplorer-React",
+    "projectUrl": "https://tarunluthra123.github.io/GithubExplorer-React/",
+    "technologies": [
+      "ReactJS",
+      "REST API",
+      "Github"
+    ],
+    "icon": "git"
+  },
+  "4": {
+    "title": "Tambola",
+    "description": "Play the popular board game Tambola (Indian Bingo) with this fun and responsive random number generator with special messages for each number.",
+    "githubUrl": "https://github.com/tarunluthra123/Tambola-React",
+    "projectUrl": "https://tarunluthra123.github.io/Tambola-React/",
+    "icon": "game-board",
+    "technologies": [
+      "ReactJS",
+      "Bootstrap",
+      "Animations"
+    ]
+  },
+  "5": {
+    "title": "Movie Database",
+    "description": "A Movie Database where users can browse movies and segragate them into separate lists. Movies can be searched with title or by genres.",
+    "githubUrl": "https://github.com/tarunluthra123/MovieDB-React",
+    "projectUrl": "https://movie-db-reactjs.herokuapp.com/",
+    "icon": "camera-movie",
+    "technologies": [
+      "ReactJS",
+      "ExpressJS",
+      "MongoDB",
+      "JWTs",
+      "REST APIs"
+    ]
+  }
+}
