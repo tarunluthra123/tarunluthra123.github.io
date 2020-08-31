@@ -1,9 +1,17 @@
 import React, {Component} from 'react';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import * as Icons from "@fortawesome/free-solid-svg-icons"
 import {Button} from 'semantic-ui-react';
 
+const Images = require.context('../assets/', true)
+
 class Project extends Component {
+    renderImage = () => {
+        let imageUrl = this.props.data.icon
+        if (imageUrl) {
+            let image = Images('./' + imageUrl)
+            return <img src={image} height="50px"/>
+        }
+        return <img alt={"Logo"}/>
+    }
 
     renderBadges = () => {
         let arr = []
@@ -22,7 +30,7 @@ class Project extends Component {
             <div className="row p-2 m-2">
                 <div className="col-1">
                     <br/>
-                    <FontAwesomeIcon icon={Icons.faShoppingCart} size="lg"/>
+                    {this.renderImage()}
                 </div>
                 <div className="col">
                     &nbsp;&nbsp;&nbsp;

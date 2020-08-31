@@ -6,6 +6,7 @@ import AboutPage from "./AboutPage";
 import WorkExperience from "./WorkExperience";
 import ProjectList from "./ProjectList";
 import EducationList from "./EducationList";
+import Achievements from "./Achievements";
 
 class MainPage extends Component {
     scrollToTop = () => {
@@ -15,9 +16,10 @@ class MainPage extends Component {
     render() {
         return (
             <div>
-                <Navbar fixed="top" bg="light" variant="dark">
+                <Navbar fixed="top" bg="light">
                     <Nav className="container-fluid row">
-                        <Link activeClass="active" className="navLinks col" to="about" spy={true} smooth={true}
+                        <Link activeClass="active" className="navLinks col" to="about" spy={true}
+                              smooth={true}
                               duration={500}>
                             <Button variant="light">
                                 <img src={TL_Logo} alt={"TL"} height="50px"/>
@@ -35,10 +37,15 @@ class MainPage extends Component {
                               duration={500}>
                             <Button variant="light"> Education</Button>
                         </Link>
+                        <Link activeClass="active" className="navLinks col" to="achievements" spy={true}
+                              smooth={true} duration={500}>
+                            <Button variant="light">Achievements</Button>
+                        </Link>
                         <Link activeClass="active" className="navLinks col" to="contactInfo" spy={true}
                               smooth={true} duration={500}>
                             <Button variant="light">Contact</Button>
                         </Link>
+
                     </Nav>
                 </Navbar>
 
@@ -59,7 +66,13 @@ class MainPage extends Component {
                     </Element>
 
                     <Element name="education" className="element">
+                        <br/><br/>
                         <EducationList/>
+                    </Element>
+
+                    <Element name="achievements" className="element">
+                        <br/><br/>
+                        <Achievements/>
                     </Element>
 
                     <Element name="contactInfo" className="element">

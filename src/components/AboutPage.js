@@ -9,22 +9,44 @@ for (let label in skillsData) {
     skillValue.push(skillsData[label])
 }
 
-const graphColorRGBCode = '34, 195, 243'
+const graphColorRGBCode = [
+    '34, 195, 243',
+    '212, 97, 243',
+    '238, 116, 51',
+    '79, 238, 51',
+    '226, 39, 99',
+    '39, 58, 226',
+    '147, 16, 229',
+    '5, 92, 9',
+    '239, 194, 33',
+    '33, 208, 239',
+    '158, 10, 86'
+]
+const backgroundColor = []
+const borderColor = []
+const hoverBackgroundColor = []
+const hoverBorderColor = []
+
+for (let color of graphColorRGBCode) {
+    backgroundColor.push("rgba(" + color + ",0.2)")
+    borderColor.push("rgba(" + color + ",1)")
+    hoverBackgroundColor.push("rgba(" + color + ",0.4)")
+    hoverBorderColor.push("rgba(" + color + ",1)")
+}
 
 const data = {
     labels: labels,
     datasets: [
         {
             label: 'My Skill',
-            backgroundColor: "rgba(" + graphColorRGBCode + ",0.2)",
-            borderColor: 'rgba(' + graphColorRGBCode + ',1)',
+            backgroundColor: backgroundColor,
+            borderColor: borderColor,
             borderWidth: 1,
-            hoverBackgroundColor: 'rgba(' + graphColorRGBCode + ',0.4)',
-            hoverBorderColor: 'rgba(' + graphColorRGBCode + ',1)',
+            hoverBackgroundColor: hoverBackgroundColor,
+            hoverBorderColor: hoverBorderColor,
             data: skillValue,
         }
     ],
-    fill: false,
 }
 
 const options = {
