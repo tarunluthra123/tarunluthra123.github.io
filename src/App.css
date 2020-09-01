@@ -98,3 +98,8 @@
 .achievementSection {
     font-size: 120%;
 }
+
+.contactInfoContainer {
+    background-color: #eceaea;
+    border-radius: 25px;
+}

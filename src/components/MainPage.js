@@ -7,6 +7,8 @@ import WorkExperience from "./WorkExperience";
 import ProjectList from "./ProjectList";
 import EducationList from "./EducationList";
 import Achievements from "./Achievements";
+import ResumePDF from '../assets/Resume.pdf';
+import ContactInfo from "./ContactInfo";
 
 class MainPage extends Component {
     scrollToTop = () => {
@@ -46,15 +48,17 @@ class MainPage extends Component {
                             <Button variant="light">Contact</Button>
                         </Link>
                         <div className="navLinks col">
-                            <Button variant="light">Resume PDF</Button>
+                            <a href={ResumePDF} target="_blank">
+                                <Button variant="light">Resume PDF</Button>
+                            </a>
                         </div>
-
                     </Nav>
                 </Navbar>
 
                 <br/>
                 <div className="main">
                     <Element name="about" className="element">
+                        <br/><br/>
                         <AboutPage/>
                     </Element>
 
@@ -79,7 +83,8 @@ class MainPage extends Component {
                     </Element>
 
                     <Element name="contactInfo" className="element">
-                        Contact Info
+                        <br/><br/>
+                        <ContactInfo/>
                     </Element>
                 </div>
 
