@@ -45,6 +45,9 @@ class MainPage extends Component {
                               smooth={true} duration={500}>
                             <Button variant="light">Contact</Button>
                         </Link>
+                        <div className="navLinks col">
+                            <Button variant="light">Resume PDF</Button>
+                        </div>
 
                     </Nav>
                 </Navbar>
