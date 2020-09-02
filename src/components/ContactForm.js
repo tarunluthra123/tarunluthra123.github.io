@@ -46,35 +46,30 @@ class ContactForm extends Component {
 
     render() {
         return (
-            <div className="container">
-                <div className={"container sectionTitleContainer"}>
-                    <b className="sectionTitle">Contact Me</b>
-                </div>
-                <div className="form contactInfoContainer p-4 m-4">
-                    <h3 className="sm-heading"><strong>If you’re interested to get in touch with me, just fill this form
-                        and I'll get back to you soon.</strong></h3>
-                    <br/><br/>
-                    <Form method="POST">
-                        <Form.Field>
-                            <label>Full Name</label>
-                            <input type="text" placeholder="Your name.." onChange={this.handleNameChange} required/>
-                        </Form.Field>
-                        <br/>
-                        <Form.Field>
-                            <label>Email Address</label>
-                            <input type="email" placeholder="Your email address.." onChange={this.handleEmailChange}
-                                   required/>
-                        </Form.Field>
-                        <br/>
-                        <Form.Field>
-                            <label>Your message</label>
-                            <TextArea style={{"height": "200px"}} placeholder="Your Message..."
-                                      onChange={this.handleMessageChange}
-                                      required/>
-                        </Form.Field>
-                        <Button size="big" onClick={this.submitForm}>Submit</Button>
-                    </Form>
-                </div>
+            <div className="form contactInfoContainer p-4 m-4">
+                <h3 className="sm-heading"><strong>If you’re interested to get in touch with me, just fill this form
+                    and I'll get back to you soon.</strong></h3>
+                <br/><br/>
+                <Form method="POST">
+                    <Form.Field>
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Your name.." onChange={this.handleNameChange} required/>
+                    </Form.Field>
+                    <br/>
+                    <Form.Field>
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Your email address.." onChange={this.handleEmailChange}
+                               required/>
+                    </Form.Field>
+                    <br/>
+                    <Form.Field>
+                        <label>Your message</label>
+                        <TextArea style={{"height": "200px"}} placeholder="Your Message..."
+                                  onChange={this.handleMessageChange}
+                                  required/>
+                    </Form.Field>
+                    <Button size="big" onClick={this.submitForm}>Submit</Button>
+                </Form>
             </div>
         );
     }

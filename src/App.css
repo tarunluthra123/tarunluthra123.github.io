@@ -70,6 +70,7 @@
 
 .jobTitle {
     font-size: 140%;
+    padding-bottom: 1%;
 }
 
 .projectTitle {
@@ -102,4 +103,9 @@
 .contactInfoContainer {
     background-color: #eceaea;
     border-radius: 25px;
+}
+
+.socialMediaIcons {
+    display: flex;
+    justify-content: space-around;
 }
