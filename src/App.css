@@ -58,10 +58,15 @@
 .navLinks {
     color: white;
     text-align: center;
+    font-size: 120%;
 }
 
 .navLinks :hover {
-    color: orange
+    color: black;
+}
+
+.navbarContainer {
+    background-color: #e5e2e2;
 }
 
 .active {

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {animateScroll as scroll, Element, Link} from 'react-scroll'
-import {Button, Nav, Navbar} from 'react-bootstrap';
+import {Nav, Navbar} from 'react-bootstrap';
 import AboutPage from "./AboutPage";
 import WorkExperience from "./WorkExperience";
 import ProjectList from "./ProjectList";
@@ -9,6 +9,7 @@ import Achievements from "./Achievements";
 import ResumePDF from '../assets/Resume.pdf';
 import ContactInfo from "./ContactInfo";
 import Footer from "./Footer";
+import {Icon} from "semantic-ui-react";
 
 class MainPage extends Component {
     scrollToTop = () => {
@@ -17,38 +18,36 @@ class MainPage extends Component {
 
     render() {
         return (
-            <div>
-                <Navbar fixed="top" bg="light">
-                    <Nav className="container-fluid row">
+            <React.Fragment>
+                <Navbar fixed="top" className="navbarContainer p-3">
+                    <Nav className="container-fluid row ">
                         <Link activeClass="active" className="navLinks col" to="about" spy={true}
                               smooth={true} duration={500}>
-                            <Button variant="light">
-                                Introduction
-                            </Button>
+                            <a href="#">Introduction &#128102;</a>
                         </Link>
                         <Link activeClass="active" className="navLinks col" to="workExperience" spy={true}
                               smooth={true} duration={500}>
-                            <Button variant="light"> Work Experience</Button>
+                            <a href="#">Work Experience &#128188;</a>
                         </Link>
                         <Link activeClass="active" className="navLinks col" to="projectsList" spy={true}
                               smooth={true} duration={500}>
-                            <Button variant="light">Projects</Button>
+                            <a href="#">Projects &#128187;</a>
                         </Link>
                         <Link activeClass="active" className="navLinks col" to="education" spy={true} smooth={true}
                               duration={500}>
-                            <Button variant="light"> Education</Button>
+                            <a href="#">Education<Icon color="green" name="book"/></a>
                         </Link>
-                        <Link activeClass="active" className="navLinks col" to="achievements" spy={true}
+                        <Link className="navLinks col" to="achievements" spy={true}
                               smooth={true} duration={500}>
-                            <Button variant="light">Achievements</Button>
+                            <a href="#">Achievements  &#127941;</a>
                         </Link>
                         <Link activeClass="active" className="navLinks col" to="contactInfo" spy={true}
                               smooth={true} duration={500}>
-                            <Button variant="light">Contact</Button>
+                            <a href="#">Contact<Icon color="red" name="mail"/></a>
                         </Link>
                         <div className="navLinks col">
                             <a href={ResumePDF} target="_blank">
-                                <Button variant="light">Resume PDF</Button>
+                                Resume PDF &#128196;
                             </a>
                         </div>
                     </Nav>
@@ -57,7 +56,6 @@ class MainPage extends Component {
                 <br/>
                 <div className="main">
                     <Element name="about" className="element">
-                        <br/><br/>
                         <AboutPage/>
                     </Element>
 
@@ -89,7 +87,7 @@ class MainPage extends Component {
                     <br/><br/>
                     <Footer scrollToTop={this.scrollToTop}/>
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 }
