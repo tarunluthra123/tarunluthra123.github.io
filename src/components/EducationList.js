@@ -21,9 +21,9 @@ class EducationList extends Component {
                 <div className="container sectionTitleContainer">
                     <b className="sectionTitle">Education</b>
                 </div>
-                <ul>
+                <React.Fragment>
                     {this.renderEducationList()}
-                </ul>
+                </React.Fragment>
             </div>
         );
     }

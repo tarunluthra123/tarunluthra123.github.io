@@ -15,10 +15,10 @@ class Job extends Component {
         let {title, startDate, endDate, organisation, orgWebsite, description} = this.props.data
         return (
             <div className="row p-2 m-2">
-                <div className="col-1">
+                <div className="col-2 col-sm-2 col-md-1">
                     <a href={orgWebsite} target="_blank">{this.renderImage()}</a>
                 </div>
-                <section className="col">
+                <section className="col col-sm col-md">
                     <section className="jobTitle">
                         <b>{title}</b>
                     </section>

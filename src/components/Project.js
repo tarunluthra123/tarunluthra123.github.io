@@ -28,11 +28,11 @@ class Project extends Component {
         let {title, description, githubUrl, projectUrl, icon} = this.props.data;
         return (
             <div className="row p-2 m-2">
-                <div className="col-1">
+                <div className="col-2 col-sm-2 col-md-1">
                     <br/>
                     {this.renderImage()}
                 </div>
-                <div className="col">
+                <div className="col col-sm col-md">
                     &nbsp;&nbsp;&nbsp;
                     <b className="projectTitle">{title}</b>
                     <br/>

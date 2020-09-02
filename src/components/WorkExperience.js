@@ -22,9 +22,9 @@ class WorkExperience extends Component {
                 <div className={"container sectionTitleContainer"}>
                     <b className="sectionTitle">Work Experience</b>
                 </div>
-                <ul>
+                <React.Fragment>
                     {this.renderJobs()}
-                </ul>
+                </React.Fragment>
             </div>
         );
     }

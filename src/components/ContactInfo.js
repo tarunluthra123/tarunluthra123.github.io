@@ -22,8 +22,8 @@ class ContactInfo extends Component {
 
 
                 <div className="container-fluid row">
-                    <div className="col-2"></div>
-                    <div className="socialMediaIcons col">
+                    <div className="col-md-2 col-sm-1 col-1"></div>
+                    <div className="socialMediaIcons col-md col-sm col">
                         <Popup content="tarunluthra123" trigger={
                             <a href="https://www.facebook.com/tarunluthra123/" target="_blank">
                                 <img src={FacebookLogo} height={50} className="m-2"/>
@@ -53,7 +53,7 @@ class ContactInfo extends Component {
                                 <img src={GmailLogo} height={50} className="m-2"/>
                             </a>} hoverable/>
                     </div>
-                    <div className="col-2"></div>
+                    <div className="col-md-2 col-sm-1 col-1"></div>
                 </div>
             </div>
         );

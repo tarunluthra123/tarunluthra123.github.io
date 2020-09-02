@@ -22,9 +22,9 @@ class ProjectList extends Component {
                 <div className="container sectionTitleContainer">
                     <b className="sectionTitle">Projects</b>
                 </div>
-                <ul>
+                <React.Fragment>
                     {this.renderProjectList()}
-                </ul>
+                </React.Fragment>
             </div>
         );
     }

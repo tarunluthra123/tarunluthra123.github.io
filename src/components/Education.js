@@ -7,7 +7,7 @@ class Education extends Component {
         let {logo, institute} = this.props.data
         if (logo) {
             let image = Images('./' + logo)
-            return <img src={image} height="70px" alt={institute}/>
+            return <img src={image} height={50} alt={institute}/>
         }
         return <img height="50px" alt={institute}/>
     }
@@ -16,10 +16,10 @@ class Education extends Component {
         let {degree, institute, result, startTime, endTime} = this.props.data
         return (
             <div className="row p-2 m-2">
-                <div className="col-1">
+                <div className="col-2 col-sm-2 col-md-1">
                     {this.renderLogo()}
                 </div>
-                <section className="col">
+                <div className="col col-sm col-md">
                     <section className="educationTitle">
                         <b>{degree}</b>
                     </section>
@@ -30,7 +30,7 @@ class Education extends Component {
                         {result}
                     </div>
                     <i style={{"color": "grey"}}>{startTime} - {endTime}</i>
-                </section>
+                </div>
             </div>
         );
     }
