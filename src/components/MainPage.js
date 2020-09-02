@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {animateScroll as scroll, Element, Link} from 'react-scroll'
 import {Button, Nav, Navbar} from 'react-bootstrap';
-import TL_Logo from '../assets/TL.png'
 import AboutPage from "./AboutPage";
 import WorkExperience from "./WorkExperience";
 import ProjectList from "./ProjectList";
@@ -9,6 +8,7 @@ import EducationList from "./EducationList";
 import Achievements from "./Achievements";
 import ResumePDF from '../assets/Resume.pdf';
 import ContactInfo from "./ContactInfo";
+import Footer from "./Footer";
 
 class MainPage extends Component {
     scrollToTop = () => {
@@ -21,10 +21,9 @@ class MainPage extends Component {
                 <Navbar fixed="top" bg="light">
                     <Nav className="container-fluid row">
                         <Link activeClass="active" className="navLinks col" to="about" spy={true}
-                              smooth={true}
-                              duration={500}>
+                              smooth={true} duration={500}>
                             <Button variant="light">
-                                <img src={TL_Logo} alt={"TL"} height="50px"/>
+                                Introduction
                             </Button>
                         </Link>
                         <Link activeClass="active" className="navLinks col" to="workExperience" spy={true}
@@ -86,9 +85,10 @@ class MainPage extends Component {
                         <br/><br/>
                         <ContactInfo/>
                     </Element>
-                </div>
 
-                <a onClick={() => this.scrollToTop()}> Go to Top</a>
+                    <br/><br/>
+                    <Footer scrollToTop={this.scrollToTop}/>
+                </div>
             </div>
         );
     }

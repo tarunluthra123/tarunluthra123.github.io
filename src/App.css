@@ -109,3 +109,18 @@
     display: flex;
     justify-content: space-around;
 }
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footerContainer {
+    text-align: center;
+}
+
+.goToTopContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1%;
+}
