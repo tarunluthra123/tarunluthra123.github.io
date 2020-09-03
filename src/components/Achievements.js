@@ -37,10 +37,11 @@ class Achievements extends Component {
                             <b>Received LOR for volunteer work</b>
                             <br/>
                             <i>Umeed NGO</i>
-                            <p style={{"font-size": "90%"}}>
+                            <br/>
+                            <section style={{"font-size": "90%"}}>
                                 Received Letter of Recommendation for exemplary volunteer
                                 work at Umeed NGO.
-                            </p>
+                            </section>
                         </section>
                         <section className="col-2 col-sm-2 col-md-2">
                             2019

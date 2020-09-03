@@ -38,7 +38,7 @@ const data = {
     labels: labels,
     datasets: [
         {
-            label: 'My Skill',
+            label: 'My Skills',
             backgroundColor: backgroundColor,
             borderColor: borderColor,
             borderWidth: 1,
@@ -66,10 +66,11 @@ class AboutPage extends Component {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col-4 container-fluid">
-                        <img src={baymax} height="250px"/>
+                    <div className="col-lg-2"/>
+                    <div className="col-md-4 col-sm-6 col-6 container-fluid ">
+                        <img src={baymax} height={200} className="introductionPhoto"/>
                     </div>
-                    <div className="col">
+                    <div className="col-md col-sm col">
                         <h1>Hi. I am Tarun Luthra</h1>
                         <p>
                             I am a Computer Science undergrad.
