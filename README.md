@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### My Resume
+I have used several different technologies to build this responsive and interactive resume.
+<br>
+Technologies used : 
+<ul>
+<li>React</li>
+<li>Bootstrap</li>
+<li>Semantic UI</li>
+<li>Chart.js</li>
+</ul>
 
-## Available Scripts
+You can view this resume [here](https://tarunluthra123.github.io/).
 
-In the project directory, you can run:
+Only a small portion of the data is hardcoded into JSX. Rather most of it is obtained from JSON objects stored in /src/assets/data.
+<br>
+This allows easier and smoother updates for the future.
 
-### `yarn start`
+### Setting up the project
+If you wish to build a similar resume for yourself, follow these instructions.
+<ol>
+<li>
+Clone this repository
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+git clone https://github.com/tarunluthra123/tarunluthra123.github.io.git
+```
+Or fork this repository into your own account using the fork button on the top right and clone it from your own forked repository.
+</li>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<li>
+Update the data in .json files in src/assets/data folder according to yourself. Stick to the established format of each .json object or you might face some errors.
+</li>
+<li>
+Update the images in assets folder as well. Some icons such as those of Github, Gmail etc. may be reusable. However most other images will have to be replaced.
+</li>
+<li>
+Update the import statements in the project files according to the updates made in 2. and 3. as well.
+</li>
+<li>
+Once set up, install the dependencies from package.json.
 
-### `yarn test`
+```
+npm install
+```
+</li>
+<li>
+Run your react app.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm start
+```
+Your resume should be up and running now if you didn't make an errors while following the above steps.
+</li>
+</ol>
 
-### `yarn build`
+If you do end up using this project for your resume, I only ask you to star &#127775; this project in return.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Deploying (Optional)
+After making the according changes, you can deploy your app to Github Pages as well just as I have. Simply change the "homepage" attribute in package.json to your own website URL and run this command.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```
+npm run deploy
+```
+That's it. Your app should be deployed.
