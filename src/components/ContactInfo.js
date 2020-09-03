@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import ContactForm from "./ContactForm";
 import FacebookLogo from '../assets/facebook_logo.png';
-import InstagramLogo from '../assets/instagram_icon.svg';
+import InstagramLogo from '../assets/instagram_icon.jpg';
 import GithubLogo from '../assets/github_logo_2.png';
-import LinkedinLogo from '../assets/linkedin_logo.svg';
+import LinkedinLogo from '../assets/linkedin_logo.png';
 import GmailLogo from '../assets/gmail_logo.png';
-import GithubProfileCard from '../assets/github_profile_card.png';
-import LinkedinCard from '../assets/linkedin_card.png';
-import InstagramCard from '../assets/instagram_card.png';
-import FacebookCard from '../assets/facebook_card.png';
+import GithubProfileCard from '../assets/github_profile_card.jpg';
+import LinkedinCard from '../assets/linkedin_card.jpg';
+import InstagramCard from '../assets/instagram_card.jpg';
+import FacebookCard from '../assets/facebook_card.jpg';
 import {Popup} from "semantic-ui-react";
 
 class ContactInfo extends Component {
@@ -19,7 +19,6 @@ class ContactInfo extends Component {
                     <b className="sectionTitle">Contact Me</b>
                 </div>
                 <ContactForm/>
-
 
                 <div className="container-fluid row">
                     <div className="col-md-2 col-sm-1 col-1"></div>

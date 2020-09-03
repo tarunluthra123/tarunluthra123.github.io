@@ -7,6 +7,7 @@ import ProjectList from "./ProjectList";
 import WorkExperience from "./WorkExperience";
 import EducationList from "./EducationList";
 import AboutPage from "./AboutPage";
+import ResumePDF from '../assets/Resume.pdf';
 import Footer from "./Footer";
 import ContactInfo from "./ContactInfo";
 
@@ -122,12 +123,12 @@ class MainPage extends Component {
                         <div className="navLinks col">
                             {!isDesktop &&
                             <Popup content={"Resume PDF"} trigger={
-                                <a href="#">
+                                <a href={ResumePDF} target="_blank">
                                     &#128196;
                                 </a>
                             }/>}
                             {isDesktop &&
-                            <a href="#">
+                            <a href={ResumePDF} target="_blank">
                                 Resume PDF&#128196;
                             </a>}
                         </div>

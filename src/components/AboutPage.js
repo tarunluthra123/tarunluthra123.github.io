@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {HorizontalBar} from "react-chartjs-2";
-import me from '../assets/me.jpg';
+import baymax from '../assets/baymax.png';
 import skillsData from '../assets/data/skills.json'
 
 const labels = [], skillValue = []
@@ -67,7 +67,7 @@ class AboutPage extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-4 container-fluid">
-                        <img src={me} height="250px"/>
+                        <img src={baymax} height="250px"/>
                     </div>
                     <div className="col">
                         <h1>Hi. I am Tarun Luthra</h1>

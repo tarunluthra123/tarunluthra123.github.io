@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import SankalanLogo from '../assets/sankalan_logo.jpg';
 import MapsLogo from '../assets/maps_logo.jpg';
-import MOS_Powerpoint from '../assets/MOS_PowerPoint.png';
+import MOS_Powerpoint from '../assets/MOS_PowerPoint.jpg';
 import UmeedLogo from '../assets/umeed_logo.png';
 
 class Achievements extends Component {
