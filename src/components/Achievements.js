@@ -13,7 +13,7 @@ class Achievements extends Component {
                 </div>
                 <React.Fragment>
                     <div className="row p-2 m-2">
-                        <div className="col-2 col-sm-2 col-md-1">
+                        <div className="col-2 col-sm-2 col-md-1 sectionImage">
                             <a href={"https://www.facebook.com/DUCS.Sankalan/"} target={"_blank"}>
                                 <img src={SankalanLogo} alt={"Sankalan"} height={50}/>
                             </a>
@@ -29,7 +29,7 @@ class Achievements extends Component {
                         </section>
                     </div>
                     <div className="row p-2 m-2">
-                        <div className="col-2 col-sm-2 col-md-1">
+                        <div className="col-2 col-sm-2 col-md-1 sectionImage">
                             <a href="http://www.umeedngo.org/" target="_blank">
                                 <img src={UmeedLogo} alt={"MAPS"} height={50}/>
                             </a>
@@ -48,7 +48,7 @@ class Achievements extends Component {
                         </section>
                     </div>
                     <div className="row p-2 m-2">
-                        <div className="col-2 col-sm-2 col-md-1">
+                        <div className="col-2 col-sm-2 col-md-1 sectionImage">
                             <img src={MapsLogo} alt={"MAPS"} height={50}/>
                         </div>
                         <section className="col col-sm col-md achievementSection">
@@ -61,7 +61,7 @@ class Achievements extends Component {
                         </section>
                     </div>
                     <div className="row p-2 m-2">
-                        <div className="col-2 col-sm-2 col-md-1">
+                        <div className="col-2 col-sm-2 col-md-1 sectionImage">
                             <img src={MapsLogo} alt={"MAPS"} height={50}/>
                         </div>
                         <section className="col col-sm col-md achievementSection">
@@ -75,7 +75,7 @@ class Achievements extends Component {
                     </div>
 
                     <div className="row p-2 m-2">
-                        <div className="col-2 col-sm-2 col-md-1">
+                        <div className="col-2 col-sm-2 col-md-1 sectionImage">
                             <a href="https://www.youracclaim.com/badges/bee7f14c-81d7-470d-82d7-eeb33380db18/linked_in_profile"
                                target="_blank">
                                 <img src={MOS_Powerpoint} alt={"MOS India"} height={50}/>

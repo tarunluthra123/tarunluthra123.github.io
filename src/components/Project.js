@@ -18,7 +18,7 @@ class Project extends Component {
         let {technologies} = this.props.data
         for (let tech of technologies) {
             arr.push(
-                <a href="#" className="badge badge-light m-2 p-2">{tech}</a>
+                <a href="#" className="badge badge-light projectBadges p-2">{tech}</a>
             )
         }
         return arr
@@ -28,7 +28,7 @@ class Project extends Component {
         let {title, description, githubUrl, projectUrl, icon} = this.props.data;
         return (
             <div className="row p-2 m-2">
-                <div className="col-2 col-sm-2 col-md-1">
+                <div className="col-2 col-sm-2 col-md-1 sectionImage">
                     <br/>
                     {this.renderImage()}
                 </div>

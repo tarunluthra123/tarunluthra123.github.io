@@ -145,6 +145,17 @@
     padding-bottom: 0.3%;
 }
 
+.projectBadges {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 2%;
+}
+
+@media (max-width: 500px) {
+    .sectionImage {
+        margin-right: 10px;
+    }
+}
 
 @media (max-width: 1580px) {
     .navLinks {

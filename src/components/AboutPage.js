@@ -71,6 +71,13 @@ class AboutPage extends Component {
             return 125
     }
 
+    decideGraphWidth = () => {
+        if (window.innerWidth < 750)
+            return 80
+        else
+            return 150
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -93,7 +100,7 @@ class AboutPage extends Component {
                     </div>
                 </div>
                 <div className="container">
-                    <HorizontalBar data={data} options={options} width={150} height={50}/>
+                    <HorizontalBar data={data} options={options} width={this.decideGraphWidth()} height={50}/>
                 </div>
             </React.Fragment>
         )
