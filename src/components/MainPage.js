@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {animateScroll as scroll, Element, Link} from 'react-scroll'
+import {animateScroll as scroll, Element, Events, Link, scroller} from 'react-scroll'
 import {Nav, Navbar} from 'react-bootstrap';
 import Achievements from "./Achievements";
 import {Icon, Popup} from "semantic-ui-react";
@@ -22,11 +22,54 @@ class MainPage extends Component {
     componentDidMount() {
         this.updatePredicate();
         window.addEventListener("resize", this.updatePredicate);
+        Events.scrollEvent.register("begin", function () {
+            console.log("begin", arguments);
+        });
+
+        Events.scrollEvent.register("end", function () {
+            console.log("end", arguments);
+        });
     }
 
     componentWillUnmount() {
         window.removeEventListener("resize", this.updatePredicate);
+        Events.scrollEvent.remove("begin");
+        Events.scrollEvent.remove("end");
     }
+
+
+    scrollTo() {
+        scroller.scrollTo("scroll-to-element", {
+            duration: 800,
+            delay: 0,
+            smooth: "easeInOutQuart"
+        });
+    }
+
+    scrollToWithContainer() {
+        let goToContainer = new Promise((resolve, reject) => {
+            Events.scrollEvent.register("end", () => {
+                resolve();
+                Events.scrollEvent.remove("end");
+            });
+
+            scroller.scrollTo("scroll-container", {
+                duration: 800,
+                delay: 0,
+                smooth: "easeInOutQuart"
+            });
+        });
+
+        goToContainer.then(() =>
+            scroller.scrollTo("scroll-container-second-element", {
+                duration: 800,
+                delay: 0,
+                smooth: "easeInOutQuart",
+                containerId: "scroll-container"
+            })
+        );
+    }
+
 
     updatePredicate = () => {
         this.setState({isDesktop: window.innerWidth > 1000});
@@ -46,12 +89,12 @@ class MainPage extends Component {
                               smooth={true} duration={500}>
                             {!isDesktop &&
                             <Popup content={"Introduction"} trigger={
-                                <a href="#">
+                                <a href="#" className="navLinkText">
                                     &#128102;
                                 </a>
                             }/>}
                             {isDesktop &&
-                            <a href="#">
+                            <a href="#" className="navLinkText">
                                 Introduction&#128102;
                             </a>}
                         </Link>
@@ -59,12 +102,12 @@ class MainPage extends Component {
                               smooth={true} duration={500}>
                             {!isDesktop &&
                             <Popup content={"Work Experience"} trigger={
-                                <a href="#">
+                                <a href="#" className="navLinkText">
                                     &#128188;
                                 </a>
                             }/>}
                             {isDesktop &&
-                            <a href="#">
+                            <a href="#" className="navLinkText">
                                 Work Experience&#128188;
                             </a>}
                         </Link>
@@ -72,12 +115,12 @@ class MainPage extends Component {
                               smooth={true} duration={500}>
                             {!isDesktop &&
                             <Popup content={"Projects"} trigger={
-                                <a href="#">
+                                <a href="#" className="navLinkText">
                                     &#128187;
                                 </a>
                             }/>}
                             {isDesktop &&
-                            <a href="#">
+                            <a href="#" className="navLinkText">
                                 Projects&#128187;
                             </a>}
                         </Link>
@@ -85,12 +128,12 @@ class MainPage extends Component {
                               duration={500}>
                             {!isDesktop &&
                             <Popup content={"Education"} trigger={
-                                <a href="#">
+                                <a href="#" className="navLinkText">
                                     <Icon color="green" name="book"/>
                                 </a>
                             }/>}
                             {isDesktop &&
-                            <a href="#">
+                            <a href="#" className="navLinkText">
                                 Education<Icon color="green" name="book"/>
                             </a>}
                         </Link>
@@ -98,12 +141,12 @@ class MainPage extends Component {
                               smooth={true} duration={500}>
                             {!isDesktop &&
                             <Popup content={"Achievements"} trigger={
-                                <a href="#">
+                                <a href="#" className="navLinkText">
                                     &#127941;
                                 </a>
                             }/>}
                             {isDesktop &&
-                            <a href="#">
+                            <a href="#" className="navLinkText">
                                 Achievements&#127941;
                             </a>}
                         </Link>
@@ -111,12 +154,12 @@ class MainPage extends Component {
                               smooth={true} duration={500}>
                             {!isDesktop &&
                             <Popup content={"Contact"} trigger={
-                                <a href="#">
+                                <a href="#" className="navLinkText">
                                     <Icon color="red" name="mail"/>
                                 </a>
                             }/>}
                             {isDesktop &&
-                            <a href="#">
+                            <a href="#" className="navLinkText">
                                 Contact<Icon color="red" name="mail"/>
                             </a>}
                         </Link>

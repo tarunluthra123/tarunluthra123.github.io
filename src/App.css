@@ -56,7 +56,6 @@
 }
 
 .navLinks {
-    color: white;
     text-align: center;
     font-size: 120%;
 }
@@ -67,10 +66,6 @@
 
 .navbarContainer {
     background-color: #e5e2e2;
-}
-
-.active {
-    color: yellow;
 }
 
 .jobTitle {
@@ -151,15 +146,19 @@
     margin-right: 2%;
 }
 
-@media (max-width: 500px) {
-    .sectionImage {
-        margin-right: 10px;
-    }
+
+.active .navLinkText {
+    color: orange;
+    font-size: 125%;
 }
 
 @media (max-width: 1580px) {
     .navLinks {
         font-size: 100%;
+    }
+
+    .active .navLinkText {
+        font-size: 120%;
     }
 }
 
@@ -168,6 +167,10 @@
     .navLinks {
         font-size: 90%;
     }
+
+    .active .navLinkText {
+        font-size: 115%;
+    }
 }
 
 
@@ -175,10 +178,34 @@
     .navLinks {
         font-size: 75%;
     }
+
+    .active .navLinkText {
+        font-size: 110%;
+    }
 }
 
 @media (max-width: 1090px) {
     .navLinks {
         font-size: 65%;
+    }
+
+    .active .navLinkText {
+        font-size: 110%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navLinks {
+        font-size: 120%;
+    }
+
+    .active .navLinkText {
+        font-size: 140%;
+    }
+}
+
+@media (max-width: 500px) {
+    .sectionImage {
+        margin-right: 10px;
     }
 }
