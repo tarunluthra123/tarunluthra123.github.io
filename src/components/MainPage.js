@@ -122,14 +122,14 @@ class MainPage extends Component {
                         </Link>
                         <div className="navLinks col">
                             {!isDesktop &&
-                            <Popup content={"Resume PDF"} trigger={
+                            <Popup content={"Résumé PDF"} trigger={
                                 <a href={ResumePDF} target="_blank">
                                     &#128196;
                                 </a>
                             }/>}
                             {isDesktop &&
                             <a href={ResumePDF} target="_blank">
-                                Resume PDF&#128196;
+                                Résumé PDF&#128196;
                             </a>}
                         </div>
                     </Nav>

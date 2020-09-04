@@ -33,7 +33,6 @@ class Project extends Component {
                     {this.renderImage()}
                 </div>
                 <div className="col col-sm col-md">
-                    &nbsp;&nbsp;&nbsp;
                     <b className="projectTitle">{title}</b>
                     <br/>
                     {this.renderBadges()}

@@ -26,7 +26,7 @@ class Job extends Component {
                         <a style={{"color": "black"}} href={orgWebsite} target="_blank">{organisation}</a>
                     </React.Fragment>
                     <br/>
-                    <i>{startDate} - {endDate}</i>
+                    <div className="jobTimePeriod"><i>{startDate} - {endDate}</i></div>
                     <ul type="disc">
                         {description.map((item) => {
                             return <li>{item}</li>

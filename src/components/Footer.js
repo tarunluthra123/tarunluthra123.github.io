@@ -34,11 +34,9 @@ class Footer extends Component {
                     <div className="col-1"/>
                     <div className="col container footerContainer">
                         <br/>
-                        Thanks for coming here.
-                        <br/>
-                        Made with &#10084;&#65039; by Tarun Luthra
-                        <br/>
-                        <b>Copyright ©️ 2020 | All Rights Reserved</b>
+                        <div className="footerContent">Thanks for coming here.</div>
+                        <div className="footerContent">Made by Tarun Luthra</div>
+                        <div className="footerContent"><b>Copyright ©️ 2020 | All Rights Reserved</b></div>
                     </div>
 
                     <div className="col-1 goToTopContainer m-2">

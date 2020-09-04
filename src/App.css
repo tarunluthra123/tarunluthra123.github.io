@@ -130,8 +130,44 @@
     padding-right: 1%;
 }
 
-@media (max-width: 1180px) {
+.achievementOrganisation {
+    margin-top: 0.6%;
+    margin-bottom: 0.6%;
+}
+
+.jobTimePeriod {
+    margin-top: 0.4%;
+    margin-bottom: 0.4%;
+}
+
+.footerContent {
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+}
+
+
+@media (max-width: 1580px) {
+    .navLinks {
+        font-size: 100%;
+    }
+}
+
+
+@media (max-width: 1360px) {
     .navLinks {
         font-size: 90%;
+    }
+}
+
+
+@media (max-width: 1250px) {
+    .navLinks {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 1090px) {
+    .navLinks {
+        font-size: 65%;
     }
 }

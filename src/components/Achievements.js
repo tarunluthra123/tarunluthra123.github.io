@@ -21,7 +21,8 @@ class Achievements extends Component {
                         <section className="col col-sm col-md achievementSection">
                             <b> Sankalan Grand Trophy Winner</b>
                             <br/>
-                            <i>Delhi University, Computer Science Dept.</i>
+                            <div className="achievementOrganisation"><i>Delhi University, Computer Science Dept.</i>
+                            </div>
                         </section>
                         <section className="col-2 col-sm-2 col-md-2">
                             2020
@@ -36,8 +37,7 @@ class Achievements extends Component {
                         <section className="col col-sm col-md achievementSection">
                             <b>Received LOR for volunteer work</b>
                             <br/>
-                            <i>Umeed NGO</i>
-                            <br/>
+                            <div className="achievementOrganisation"><i>Umeed NGO</i></div>
                             <section style={{"font-size": "90%"}}>
                                 Received Letter of Recommendation for exemplary volunteer
                                 work at Umeed NGO.
@@ -54,7 +54,7 @@ class Achievements extends Component {
                         <section className="col col-sm col-md achievementSection">
                             <b>Best Student Award</b>
                             <br/>
-                            <i>Maharaja Agarsain Public School</i>
+                            <div className="achievementOrganisation"><i>Maharaja Agarsain Public School</i></div>
                         </section>
                         <section className="col-2 col-sm-2 col-md-2">
                             2018
@@ -67,7 +67,7 @@ class Achievements extends Component {
                         <section className="col col-sm col-md achievementSection">
                             <b>Best Personality Award</b>
                             <br/>
-                            <i>Maharaja Agarsain Public School</i>
+                            <div className="achievementOrganisation"><i>Maharaja Agarsain Public School</i></div>
                         </section>
                         <section className="col-2 col-sm-2 col-md-2">
                             2018
@@ -84,7 +84,7 @@ class Achievements extends Component {
                         <section className="col col-sm col-md achievementSection">
                             <b>Microsoft Office Specialist</b>
                             <br/>
-                            <i>MOS India Championship</i>
+                            <div className="achievementOrganisation"><i>MOS India Championship</i></div>
                         </section>
                         <section className="col-2 col-sm-2 col-md-2">
                             2018

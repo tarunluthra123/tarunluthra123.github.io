@@ -15,12 +15,12 @@ const graphColorRGBCode = [
     '238, 116, 51',
     '79, 238, 51',
     '226, 39, 99',
+    '158, 10, 86',
     '39, 58, 226',
     '147, 16, 229',
     '5, 92, 9',
     '239, 194, 33',
-    '33, 208, 239',
-    '158, 10, 86'
+    '33, 208, 239'
 ]
 const backgroundColor = []
 const borderColor = []
@@ -62,6 +62,15 @@ const options = {
 }
 
 class AboutPage extends Component {
+    decideImageHeight = () => {
+        if (window.innerWidth > 550)
+            return 200
+        else if (window.innerWidth > 385)
+            return 150
+        else
+            return 125
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -69,10 +78,11 @@ class AboutPage extends Component {
                     <div className="row">
                         <div className="col-lg-2"/>
                         <div className="col-md-4 col-sm-5 col-5 container-fluid ">
-                            <img src={me} height={window.innerWidth > 500 ? 200 : 150} className="introductionPhoto"/>
+                            <img src={me} height={this.decideImageHeight()}
+                                 className="introductionPhoto" style={{"vertical-align": "middle"}}/>
                         </div>
                         <div className="col-md col-sm col">
-                            <h1>Hi. I am Tarun Luthra</h1>
+                            <h1>Tarun Luthra</h1>
                             <p>
                                 I am a Computer Science undergrad.
                                 I am proficient competitive programmer with advanced Algo-DS skills and a trained web
@@ -83,7 +93,7 @@ class AboutPage extends Component {
                     </div>
                 </div>
                 <div className="container">
-                    <HorizontalBar data={data} options={options} width={100} height={50}/>
+                    <HorizontalBar data={data} options={options} width={150} height={50}/>
                 </div>
             </React.Fragment>
         )
