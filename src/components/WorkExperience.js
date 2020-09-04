@@ -7,7 +7,6 @@ class WorkExperience extends Component {
         let arr = []
         for (let jobNumber in data) {
             let obj = data[jobNumber]
-            console.log(jobNumber)
             arr.push(
                 <Job data={obj}/>
             )

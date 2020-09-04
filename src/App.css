@@ -146,6 +146,9 @@
     margin-right: 2%;
 }
 
+.introductionText {
+    font-size: 20px;
+}
 
 .active .navLinkText {
     color: orange;
@@ -204,8 +207,26 @@
     }
 }
 
+@media (max-width: 770px) {
+    .introductionText {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+    .introductionText {
+        font-size: 15px;
+    }
+}
+
 @media (max-width: 500px) {
     .sectionImage {
         margin-right: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .introductionText {
+        font-size: 13px;
     }
 }

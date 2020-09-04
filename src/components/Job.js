@@ -22,7 +22,7 @@ class Job extends Component {
                     <section className="jobTitle">
                         <b>{title}</b>
                     </section>
-                    <React.Fragment className="p-2">
+                    <React.Fragment>
                         <a style={{"color": "black"}} href={orgWebsite} target="_blank">{organisation}</a>
                     </React.Fragment>
                     <br/>
