@@ -59,19 +59,24 @@
       "ReactJS",
       "ExpressJS",
       "MongoDB",
-      "JWTs",
-      "REST APIs"
+      "REST APIs",
+      "Bootstrap"
     ]
   },
   "6": {
-    "title": "Troublemaker - Coding Blocks",
-    "description": "Added new features to Coding Blocks's MCQ Quiz generator portal.",
-    "githubUrl": "https://github.com/coding-blocks/trouble-maker-frontend",
-    "projectUrl": "http://troublemaker.codingblocks.com/",
-    "icon": "cb.png",
+    "title": "Kollab Space",
+    "description": "A collab app for students,teachers and colleagues to interact, share and collaborate ideas in a simplified manner and work together with increased productivity in a sophisticated environment",
+    "githubUrl": "https://github.com/tarunluthra123/Kollab-Space",
+    "projectUrl": "https://kollab-space.herokuapp.com/",
+    "icon": "kollab_space_logo.png",
     "technologies": [
-      "EmberJS",
-      "Ember Data"
+      "Typescript",
+      "React",
+      "Express",
+      "Socket.io",
+      "JWTs",
+      "PostgreSQL",
+      "Semantic UI CSS"
     ]
   }
 }
