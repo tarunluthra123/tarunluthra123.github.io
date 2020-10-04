@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Form, TextArea} from 'semantic-ui-react'
+import {Button, Form, Modal, TextArea} from 'semantic-ui-react'
 
 class ContactForm extends Component {
     constructor(props) {
@@ -40,8 +40,9 @@ class ContactForm extends Component {
         });
 
         formcakePost({name, email, msg})
-            .then((response) => response.json())
-            .then((data) => console.log(data));
+            .then(() => {
+                alert(`Thanks for getting in touch with me ${name}. I will try to get back to you as soon as possible.`)
+            });
     }
 
     render() {
@@ -50,7 +51,7 @@ class ContactForm extends Component {
                 <h3 className="sm-heading"><strong>If you’re interested to get in touch with me, just fill this form
                     and I'll get back to you soon.</strong></h3>
                 <br/><br/>
-                <Form method="POST">
+                <Form>
                     <Form.Field>
                         <label>Full Name</label>
                         <input type="text" placeholder="Your name.." onChange={this.handleNameChange} required/>
