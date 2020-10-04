@@ -36,6 +36,16 @@ class Footer extends Component {
                         <br/>
                         <div className="footerContent">Thanks for coming here.</div>
                         <div className="footerContent">Made by Tarun Luthra</div>
+                        <div className="footerContent">View the code{` `}
+                            <a
+                                href="https://github.com/tarunluthra123/tarunluthra123.github.io" style={{
+                                color: 'white',
+                                textDecoration: 'underline'
+                            }}
+                                target="_blank">
+                                here
+                            </a>.
+                        </div>
                         <div className="footerContent"><b>Copyright ©️ 2020 | All Rights Reserved</b></div>
                     </div>
 
