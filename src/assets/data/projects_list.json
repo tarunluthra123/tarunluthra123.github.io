@@ -3,7 +3,7 @@
     "title": "Typing Speed Test",
     "description": "Online typing speed test to measure the typing speed of a user accurately.",
     "githubUrl": "https://github.com/tarunluthra123/Project-Typing-Speed-Test",
-    "projectUrl": "https://tarunluthra123.github.io/Project-Typing-Speed-Test/",
+    "projectUrl": "https://tarunluthra.me/Project-Typing-Speed-Test/",
     "icon": "keyboard.png",
     "technologies": [
       "HTML5",
@@ -29,7 +29,7 @@
     "title": "Github Explorer",
     "description": "A Github Explorer web app to search and explore github user profiles using data fetched from Github REST API. The page uses infinite scroll to display the list of repositories efficiently.",
     "githubUrl": "https://github.com/tarunluthra123/GithubExplorer-React",
-    "projectUrl": "https://tarunluthra123.github.io/GithubExplorer-React/",
+    "projectUrl": "https://tarunluthra.me/GithubExplorer-React/",
     "icon": "github_logo.png",
     "technologies": [
       "ReactJS",
@@ -41,7 +41,7 @@
     "title": "Tambola",
     "description": "Play the popular board game Tambola (Indian Bingo) with this fun and responsive random number generator with special messages for each number.",
     "githubUrl": "https://github.com/tarunluthra123/Tambola-React",
-    "projectUrl": "https://tarunluthra123.github.io/Tambola-React/",
+    "projectUrl": "https://tarunluthra.me/Tambola-React/",
     "icon": "tambola_logo.png",
     "technologies": [
       "ReactJS",
