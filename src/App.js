@@ -1,14 +1,20 @@
 import React from 'react';
 import './App.css';
 import MainPage from "./components/MainPage";
-import Footer from "./components/Footer";
+import {BrowserRouter as Router, Route, Switch, withRouter} from 'react-router-dom'
+import ResumePdf from "./components/ResumePdf";
 
 function App() {
     return (
         <div className="App">
-            <MainPage/>
+            <Router>
+                <Switch>
+                    <Route exact path={'/'} component={MainPage}/>
+                    <Route path={'/pdf'} component={ResumePdf}/>
+                </Switch>
+            </Router>
         </div>
     );
 }
 
-export default App;
+export default withRouter(App);

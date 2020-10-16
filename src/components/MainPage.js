@@ -10,6 +10,7 @@ import AboutPage from "./AboutPage";
 import ResumePDF from '../assets/Resume.pdf';
 import Footer from "./Footer";
 import ContactInfo from "./ContactInfo";
+import {BrowserRouter as Router, Link as RouterLink} from 'react-router-dom'
 
 class MainPage extends Component {
     constructor(props) {
@@ -173,7 +174,8 @@ class MainPage extends Component {
                             {isDesktop &&
                             <a href={'https://tarunluthra.me/Resume.pdf/'} target="_blank">
                                 Résumé PDF&#128196;
-                            </a>}
+                            </a>
+                            }
                         </div>
                     </Nav>
                 </Navbar>
