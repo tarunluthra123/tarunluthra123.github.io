@@ -24,7 +24,7 @@ class Project extends Component {
                 </div>
             )
         }
-        return <img alt={"Logo"}/>
+        return <img alt={title}/>
     }
 
     render() {
