@@ -5,44 +5,50 @@ const Images = require.context('../assets/', true)
 
 class Project extends Component {
     renderImage = () => {
-        let imageUrl = this.props.data.icon
+        let {title, imageUrl} = this.props.data
+        let width = ""
+        if (window.innerWidth >= 1200) {
+            //Without this the image size of png image comes out to be more than gif images thus ruining the alignment
+            width = "468"
+        }
         if (imageUrl) {
             let image = Images('./' + imageUrl)
-            return <img src={image} height="50px"/>
+            return (
+                <div className="hovereffect">
+                    <img className="img-responsive projectPreviewImage" src={image} alt=""
+                         width={width}
+                    />
+                    <div className="overlay">
+                        <h2>{title}</h2>
+                    </div>
+                </div>
+            )
         }
         return <img alt={"Logo"}/>
     }
 
-    renderBadges = () => {
-        let arr = []
-        let {technologies} = this.props.data
-        for (let tech of technologies) {
-            arr.push(
-                <a href="#" className="badge badge-light projectBadges p-2">{tech}</a>
-            )
-        }
-        return arr
-    }
-
     render() {
-        let {title, description, githubUrl, projectUrl, icon} = this.props.data;
+        let {title, description, githubUrl, projectUrl, icon, technologies} = this.props.data;
         return (
             <div className="row p-2 m-2">
-                <div className="col-2 col-sm-2 col-md-1 sectionImage">
+                <div className="col-12 col-sm-12 col-md-6 sectionImage">
                     <br/>
                     {this.renderImage()}
                 </div>
                 <div className="col col-sm col-md">
+                    <br/>
                     <b className="projectTitle">{title}</b>
                     <br/>
-                    {this.renderBadges()}
+                    {technologies.map(tech => <a href="#" className="badge badge-light projectBadges p-2">{tech}</a>)}
                     <p>
                         {description}
                     </p>
-                    {githubUrl &&
-                    <Button color="teal" href={githubUrl} target={"_blank"}>Github</Button>}
                     {projectUrl &&
                     <Button color="blue" href={projectUrl} target={"_blank"} className="m-1">Demo</Button>}
+                    {githubUrl &&
+                    <Button color="teal" href={githubUrl} target={"_blank"}>Github</Button>}
+                    {!githubUrl &&
+                    <span className="badge">Source Code is private</span>}
                 </div>
             </div>
         );
