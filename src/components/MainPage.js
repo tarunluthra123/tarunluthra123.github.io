@@ -9,6 +9,7 @@ import EducationList from "./EducationList";
 import AboutPage from "./AboutPage";
 import Footer from "./Footer";
 import ContactInfo from "./ContactInfo";
+import Fade from 'react-reveal/Fade';
 
 class MainPage extends Component {
     constructor(props) {
@@ -185,8 +186,10 @@ class MainPage extends Component {
                     </Element>
 
                     <Element name="workExperience" className="element">
-                        <br/><br/>
-                        <WorkExperience/>
+                        <Fade bottom>
+                            <br/><br/>
+                            <WorkExperience/>
+                        </Fade>
                     </Element>
 
                     <Element name="projectsList" className="element">
@@ -200,13 +203,17 @@ class MainPage extends Component {
                     </Element>
 
                     <Element name="achievements" className="element">
-                        <br/><br/>
-                        <Achievements/>
+                        <Fade bottom>
+                            <br/><br/>
+                            <Achievements/>
+                        </Fade>
                     </Element>
 
                     <Element name="contactInfo" className="element">
-                        <br/><br/>
-                        <ContactInfo/>
+                        <Fade bottom>
+                            <br/><br/>
+                            <ContactInfo/>
+                        </Fade>
                     </Element>
 
                     <br/><br/>

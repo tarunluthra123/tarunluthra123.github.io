@@ -1,33 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 import data from '../assets/data/projects_list.json'
 import Project from "./Project";
-
-class ProjectList extends Component {
-    renderProjectList = () => {
-        let arr = []
-        for (let projectNo in data) {
-            let project = data[projectNo]
-            arr.push(
-                <Project data={project}/>
-            )
-        }
-        arr.reverse()
-        return arr;
-    }
+import Fade from "react-reveal/Fade";
 
 
-    render() {
-        return (
-            <div className="container">
-                <div className="container sectionTitleContainer">
-                    <b className="sectionTitle">Projects</b>
-                </div>
-                <React.Fragment>
-                    {this.renderProjectList()}
-                </React.Fragment>
+const ProjectList = (props) => {
+    return (
+        <div className="container">
+            <div className="container sectionTitleContainer">
+                <b className="sectionTitle">Projects</b>
             </div>
-        );
-    }
+            {Object.entries(data).map(entry => <Fade bottom><Project data={entry[1]}/></Fade>).reverse()}
+        </div>
+    );
 }
 
 export default ProjectList;
