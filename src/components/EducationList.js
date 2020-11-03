@@ -1,32 +1,17 @@
-import React, {Component} from 'react';
+import React from 'react';
 import data from '../assets/data/education_list.json';
 import Education from "./Education";
+import Fade from "react-reveal/Fade";
 
-class EducationList extends Component {
-    renderEducationList = () => {
-        let arr = []
-        for (let eduNo in data) {
-            let education = data[eduNo]
-            arr.push(
-                <Education data={education}/>
-            )
-        }
-        arr.reverse()
-        return arr
-    }
-
-    render() {
-        return (
-            <div className="container">
-                <div className="container sectionTitleContainer">
-                    <b className="sectionTitle">Education</b>
-                </div>
-                <React.Fragment>
-                    {this.renderEducationList()}
-                </React.Fragment>
+const EducationList = (props) => {
+    return (
+        <div className="container">
+            <div className="container sectionTitleContainer">
+                <b className="sectionTitle">Education</b>
             </div>
-        );
-    }
+            {Object.entries(data).map(entry => <Fade bottom><Education data={entry[1]}/></Fade>).reverse()}
+        </div>
+    )
 }
 
 export default EducationList;
