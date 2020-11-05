@@ -1,32 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import data from '../assets/data/work_experience.json';
 import Job from "./Job";
 
-class WorkExperience extends Component {
-    renderJobs = () => {
-        let arr = []
-        for (let jobNumber in data) {
-            let obj = data[jobNumber]
-            arr.push(
-                <Job data={obj}/>
-            )
-        }
-        arr.reverse()
-        return arr
-    }
-
-    render() {
-        return (
-            <div className="container">
-                <div className={"container sectionTitleContainer"}>
-                    <b className="sectionTitle">Work Experience</b>
-                </div>
-                <React.Fragment>
-                    {this.renderJobs()}
-                </React.Fragment>
+const WorkExperience = (props) => {
+    return (
+        <div className="container">
+            <div className={"container sectionTitleContainer"}>
+                <b className="sectionTitle">Work Experience</b>
             </div>
-        );
-    }
+            {Object.entries(data).map(entry => <Job data={entry[1]}/>).reverse()}
+        </div>
+    );
 }
 
 export default WorkExperience;

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import SkillsGraph from "./SkillsGraph";
 import me from '../assets/me.jpg'
+import SkillsShowcase from "./SkillsShowcase";
 
 
 class AboutPage extends Component {
@@ -34,7 +35,7 @@ class AboutPage extends Component {
                         </div>
                     </div>
                 </div>
-                <SkillsGraph/>
+                <SkillsShowcase/>
             </React.Fragment>
         )
             ;
