@@ -4,8 +4,6 @@ import {Nav, Navbar} from 'react-bootstrap';
 import Achievements from "./Achievements";
 import {Icon, Popup} from "semantic-ui-react";
 import ProjectList from "./ProjectList";
-import WorkExperience from "./WorkExperience";
-import EducationList from "./EducationList";
 import AboutPage from "./AboutPage";
 import Footer from "./Footer";
 import ContactInfo from "./ContactInfo";
@@ -98,19 +96,7 @@ class MainPage extends Component {
                                 Introduction&#128102;
                             </a>}
                         </Link>
-                        <Link activeClass="active" className="navLinks col" to="workExperience" spy={true}
-                              smooth={true} duration={500}>
-                            {!isDesktop &&
-                            <Popup content={"Work Experience"} trigger={
-                                <a href="#" className="navLinkText">
-                                    &#128188;
-                                </a>
-                            }/>}
-                            {isDesktop &&
-                            <a href="#" className="navLinkText">
-                                Work Experience&#128188;
-                            </a>}
-                        </Link>
+
                         <Link activeClass="active" className="navLinks col" to="projectsList" spy={true}
                               smooth={true} duration={500}>
                             {!isDesktop &&
@@ -124,19 +110,7 @@ class MainPage extends Component {
                                 Projects&#128187;
                             </a>}
                         </Link>
-                        <Link activeClass="active" className="navLinks col" to="education" spy={true} smooth={true}
-                              duration={500}>
-                            {!isDesktop &&
-                            <Popup content={"Education"} trigger={
-                                <a href="#" className="navLinkText">
-                                    <Icon color="green" name="book"/>
-                                </a>
-                            }/>}
-                            {isDesktop &&
-                            <a href="#" className="navLinkText">
-                                Education<Icon color="green" name="book"/>
-                            </a>}
-                        </Link>
+
                         <Link className="navLinks col" to="achievements" spy={true}
                               smooth={true} duration={500}>
                             {!isDesktop &&
@@ -185,21 +159,9 @@ class MainPage extends Component {
                         <AboutPage/>
                     </Element>
 
-                    <Element name="workExperience" className="element">
-                        <Fade bottom>
-                            <br/><br/>
-                            <WorkExperience/>
-                        </Fade>
-                    </Element>
-
                     <Element name="projectsList" className="element">
                         <br/><br/>
                         <ProjectList/>
-                    </Element>
-
-                    <Element name="education" className="element">
-                        <br/><br/>
-                        <EducationList/>
                     </Element>
 
                     <Element name="achievements" className="element">
