@@ -71,19 +71,44 @@
     padding-top: 150px;
     padding-bottom: 120px;
     padding-right: 150px;
+    /*clip-path: ellipse(600px 500px at 48% 100%);*/
 }
 
+.diagonallyTiltedDivAbout {
+    background-color: #100f0f;
+    height: 60px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+
 .skillsContainer {
-    /*background-color: #100f0f;*/
-    /*color: #f6f6f6;*/
-    padding-bottom: 120px;
+    /*padding-bottom: 120px;*/
     padding-right: 150px;
     margin: 0;
 }
 
-.skillsCard {
-    background-color: red;
-    color: red;
+.projectsListContainer {
+    background-color: #e7e7e7;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.diagonallyTiltedDivProjectsTop {
+    background-color: #e7e7e7;
+    height: 60px;
+    clip-path: polygon(-1% calc(100% + 1px), 100% 0%, 100% calc(100% + 1px));
+}
+
+.diagonallyTiltedDivProjectsBottom {
+    background-color: #e7e7e7;
+    height: 60px;
+    color: black;
+    position: relative;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
 
 .element {

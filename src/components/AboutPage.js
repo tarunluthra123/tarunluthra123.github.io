@@ -37,10 +37,10 @@ class AboutPage extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="diagonallyTiltedDivAbout">abcdc</div>
                 <SkillsShowcase/>
             </React.Fragment>
-        )
-            ;
+        );
     }
 }
 
