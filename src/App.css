@@ -161,6 +161,17 @@
     font-size: 125%;
 }
 
+.skillsHeading {
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 23px
+}
+
+.skillName {
+    font-size: 18px;
+}
+
 @media (max-width: 1580px) {
     .navLinks {
         font-size: 100%;
@@ -201,6 +212,19 @@
     .active .navLinkText {
         font-size: 110%;
     }
+
+
+    .skillName {
+        font-size: 15px;
+    }
+
+    .skillsHeading {
+        font-size: 18px;
+    }
+
+    .skillImage {
+        height: 30px
+    }
 }
 
 @media (max-width: 1000px) {
@@ -216,6 +240,14 @@
 @media (max-width: 770px) {
     .introductionText {
         font-size: 18px;
+    }
+
+    .skillName {
+        font-size: 12px;
+    }
+
+    .skillsHeading {
+        font-size: 15px;
     }
 }
 
