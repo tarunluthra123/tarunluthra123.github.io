@@ -1,5 +1,20 @@
+@font-face {
+    font-family: 'prociono';
+    src: url(https://github.com/theleagueof/prociono/blob/master/Prociono.ttf?raw=true) format("truetype");
+}
+
+@font-face {
+    font-family: 'Sorts Mill Goudy';
+    src: url(https://github.com/theleagueof/sorts-mill-goudy/blob/master/OFLGoudyStMTT.ttf?raw=true) format("truetype");
+}
+
 .App {
     font-size: large;
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+    /*font-family: 'Sorts Mill Goudy', serif;*/
+    /*font-family: 'prociono', serif;*/
+    /*font-family: 'Merriweather', serif;*/
 }
 
 .App-logo {
@@ -42,13 +57,41 @@
     padding: 0 !important;
 }
 
+.nameHeading {
+    font-family: 'prociono', serif;
+    font-size: 50px;
+    margin-bottom: 2px;
+    padding-bottom: 20px;
+}
+
+.aboutContainer {
+    background-color: #100f0f;
+    color: #f6f6f6;
+    margin: 0;
+    padding-top: 150px;
+    padding-bottom: 120px;
+    padding-right: 150px;
+}
+
+.skillsContainer {
+    /*background-color: #100f0f;*/
+    /*color: #f6f6f6;*/
+    padding-bottom: 120px;
+    padding-right: 150px;
+    margin: 0;
+}
+
+.skillsCard {
+    background-color: red;
+    color: red;
+}
+
 .element {
     /*height: 1000px;*/
     background-color: white;
     /*font-size: 45px;*/
     /*border-top: 1px solid #000;*/
-    padding-top: 55px;
-    padding-left: 10px;
+    /*padding-top: 55px;*/
 }
 
 .element.no-padding {
@@ -58,19 +101,16 @@
 .navLinks {
     text-align: center;
     font-size: 120%;
+    color: white;
 }
 
 .navLinks :hover {
-    color: darkblue;
+    color: white;
 }
 
 .navbarContainer {
-    background-color: #e5e2e2;
-}
-
-.jobTitle {
-    font-size: 140%;
-    padding-bottom: 1%;
+    background-color: #888888;
+    color: white
 }
 
 .projectTitle {
@@ -84,16 +124,6 @@
 
 .sectionTitleContainer {
     padding-bottom: 1%;
-}
-
-.educationTitle {
-    font-size: 130%;
-}
-
-.instituteName {
-    font-size: 100%;
-    padding-bottom: 0.5%;
-    padding-top: 1%;
 }
 
 .achievementSection {
@@ -130,11 +160,6 @@
     margin-bottom: 0.6%;
 }
 
-.jobTimePeriod {
-    margin-top: 0.4%;
-    margin-bottom: 0.4%;
-}
-
 .footerContent {
     padding-top: 0.3%;
     padding-bottom: 0.3%;
@@ -147,7 +172,8 @@
 }
 
 .introductionText {
-    font-size: 20px;
+    font-size: 25px;
+    font-family: "prociono", serif;
 }
 
 .projectPreviewImage {
@@ -156,9 +182,13 @@
     margin-right: 0
 }
 
+.navLinks > a {
+    color: white
+}
+
 .active .navLinkText {
-    color: orange;
     font-size: 125%;
+    -webkit-text-stroke: 1px #00ffd2;
 }
 
 .skillsHeading {
@@ -181,7 +211,6 @@
         font-size: 120%;
     }
 }
-
 
 @media (max-width: 1360px) {
     .navLinks {

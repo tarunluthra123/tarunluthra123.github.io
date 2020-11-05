@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade'
 
 const SkillsShowcase = (props) => {
     return (
-        <div className="container">
+        <div className="container-fluid skillsContainer">
             <br/><br/>
             <div className={"container sectionTitleContainer"}>
                 <b className="sectionTitle">Skills</b>
