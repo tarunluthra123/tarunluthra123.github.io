@@ -1,0 +1,217 @@
+// _decimal.scss | MIT License | gist.github.com/terkel/4373420
+// Round a number to specified digits.
+//
+// @param  {Number} $number A number to round
+// @param  {Number} [$digits:0] Digits to output
+// @param  {String} [$mode:round] (round|ceil|floor) How to round a number
+// @return {Number} A rounded number
+// @example
+//     decimal-round(0.333)    => 0
+//     decimal-round(0.333, 1) => 0.3
+//     decimal-round(0.333, 2) => 0.33
+//     decimal-round(0.666)    => 1
+//     decimal-round(0.666, 1) => 0.7
+//     decimal-round(0.666, 2) => 0.67
+//
+@function decimal-round ($number, $digits: 0, $mode: round) {
+  $n: 1;
+  // $number must be a number
+  @if type-of($number) !=number {
+    @warn '#{ $number } is not a number.';
+    @return $number;
+  }
+  // $digits must be a unitless number
+  @if type-of($digits) !=number {
+    @warn '#{ $digits } is not a number.';
+    @return $number;
+  } @else if not unitless($digits) {
+    @warn '#{ $digits } has a unit.';
+    @return $number;
+  }
+  @for $i from 1 through $digits {
+    $n: $n * 10;
+  }
+  @if $mode==round {
+    @return round($number * $n) / $n;
+  } @else if $mode==ceil {
+    @return ceil($number * $n) / $n;
+  } @else if $mode==floor {
+    @return floor($number * $n) / $n;
+  } @else {
+    @warn '#{ $mode } is undefined keyword.';
+    @return $number;
+  }
+}
+
+// Ceil a number to specified digits.
+//
+// @param  {Number} $number A number to round
+// @param  {Number} [$digits:0] Digits to output
+// @return {Number} A ceiled number
+// @example
+//     decimal-ceil(0.333)    => 1
+//     decimal-ceil(0.333, 1) => 0.4
+//     decimal-ceil(0.333, 2) => 0.34
+//     decimal-ceil(0.666)    => 1
+//     decimal-ceil(0.666, 1) => 0.7
+//     decimal-ceil(0.666, 2) => 0.67
+//
+@function decimal-ceil ($number, $digits: 0) {
+  @return decimal-round($number, $digits, ceil);
+}
+
+// Floor a number to specified digits.
+//
+// @param  {Number} $number A number to round
+// @param  {Number} [$digits:0] Digits to output
+// @return {Number} A floored number
+// @example
+//     decimal-floor(0.333)    => 0
+//     decimal-floor(0.333, 1) => 0.3
+//     decimal-floor(0.333, 2) => 0.33
+//     decimal-floor(0.666)    => 0
+//     decimal-floor(0.666, 1) => 0.6
+//     decimal-floor(0.666, 2) => 0.66
+//
+@function decimal-floor ($number, $digits: 0) {
+  @return decimal-round($number, $digits, floor);
+}
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+@function v($x, $y) {
+  $start-x: -100px;
+  $end-x: 1500px;
+  $steps-x: 50;
+  $steps-x-value: (($start-x - $end-x) / $steps-x) * -1;
+
+  $start-y: -50px;
+  $end-y: 1300px;
+  $steps-y: 50;
+  $steps-y-value: (($start-y - $end-y) / $steps-y) * -1;
+
+  $x-list: ();
+  $y-list: ();
+
+  $nextval: $start-x;
+  @while $nextval < $end-x {
+    $x-list: append($x-list, $nextval);
+    $nextval: $nextval + $steps-x-value;
+  }
+
+  $nextval: $start-y;
+  @while $nextval < $end-y {
+    $y-list: append($y-list, $nextval);
+    $nextval: $nextval + $steps-y-value;
+  }
+
+  @return nth($x-list, $x),
+  nth($y-list, $y);
+}
+
+@function randomVList() {
+  $x-maxsteps: 50;
+  $y-maxsteps: 50;
+  $x: random($x-maxsteps - 10); //Startvalue
+  $y: random($y-maxsteps - 10); //Startvalue
+  $list: ();
+  $list: append($list, $x $y);
+  $random-x-steps: random($x-maxsteps - 5) + 5;
+  @while $x < $random-x-steps {
+    $x: $x + 1;
+    @if $y==$y-maxsteps {
+      $y: $y + (random(2) - 2); //y + [-1|0]
+    } @else if $y==1 {
+      $y: $y + (random(2) - 1); //y + [0|1]
+    } @else {
+      $y: $y + (random(3) - 2); //y + [-1|0|1]
+    }
+    $list: append($list, $x $y);
+  }
+  @return $list;
+}
+
+@mixin animation($name, $tupleList) {
+  @keyframes #{$name} {
+    $steps: length($tupleList);
+    //@debug "Steps: " + $steps;
+    @if $steps > 1 {
+      @for $i from 0 to $steps {
+        // <start> to <end> -> not include <end>
+        $percentage: decimal-round($i*(100/($steps - 1)), 2); //calc percentage with 2 decimals
+        #{$percentage}% {
+          $tuple: nth($tupleList, $i+1);
+          transform: translate(v(nth($tuple, 1), nth($tuple, 2)));
+        }
+      }
+      0% {
+        opacity: 0
+      }
+      15% {
+        opacity: 1
+      }
+      85% {
+        opacity: 1
+      }
+      100% {
+        opacity: 0
+      }
+    }
+  }
+}
+
+//Create random animations
+@for $i from 1 to 20 {
+  $randomlist: randomVList();
+  @while length($randomlist) < 3 {
+    $randomlist: randomVList();
+  }
+  @include animation("animation" + $i, $randomlist);
+}
+
+.particle {
+  position: absolute;
+  opacity: 0;
+  overflow: visible;
+  background-size: contain; //auto|length|cover|contain|initial|inherit
+  clip-path: circle(50% at 50% 50%);
+}
+
+@for $i from 1 to 20 {
+  .elem#{$i} {
+    $position: v(random(10), random(10));
+    left: nth($position, 1);
+    top: nth($position, 2);
+    //$duration: 12+ random(7);
+    //for demo:
+    $duration: 15 + random(5);
+    animation: animation#{$i} linear #{$duration}s infinite;
+    $size: 12px + random(20);
+    height: $size;
+    width: $size;
+    $colorList: #9f9e9e, #c8c7c7, #6e6e6e, #a9a9a9, #d7d7d7;
+    background-color: nth($colorList, ($i % 5) + 1);
+  }
+}
+
+@for $i from 1 through 20 {
+  .anim-delay#{$i} {
+    //$animationdelay: random(20);
+    //for demo:
+    $animationdelay: random(5);
+    animation-delay: #{$animationdelay}s;
+  }
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  background: #333;
+  position: relative;
+}
