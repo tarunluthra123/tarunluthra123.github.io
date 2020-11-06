@@ -19,8 +19,9 @@ const ProjectList = (props) => {
 
                 <p style={{"color": "transparent"}}>Invisible Text here</p>
             </div>
-
-            <div className="diagonallyTiltedDivProjectsBottom"/>
+            <div className="projectListBottomFillerBox">
+                <div className="diagonallyTiltedDivProjectsBottom"/>
+            </div>
         </React.Fragment>
     );
 }

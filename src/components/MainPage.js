@@ -159,16 +159,11 @@ class MainPage extends Component {
                     </Element>
 
                     <Element name="projectsList" className="element">
-
                         <ProjectList/>
                     </Element>
 
                     <Element name="achievements" className="element">
-
-                        <Fade bottom>
-                            <br/><br/>
                             <Achievements/>
-                        </Fade>
                     </Element>
 
                     <Element name="contactInfo" className="element">

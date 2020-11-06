@@ -92,6 +92,7 @@
     padding: 0;
     margin: 0;
     border: none;
+    padding-bottom: 10px;
 }
 
 .diagonallyTiltedDivProjectsTop {
@@ -103,12 +104,12 @@
 .diagonallyTiltedDivProjectsBottom {
     background-color: #e7e7e7;
     height: 60px;
-    color: black;
     position: relative;
     vertical-align: top;
-    padding: 0;
-    margin: 0;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+    border-top-color: green;
+    border-top-left-radius: 40px;
+    border-top-width: 30px;
 }
 
 .element {
@@ -136,6 +137,26 @@
 .navbarContainer {
     background-color: #888888;
     color: white
+}
+
+.projectListBottomFillerBox {
+    background-image: linear-gradient(180deg, #e7e7e7, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb, #cbcbcb);
+}
+
+.achievementListSection {
+    background-color: #cbcbcb;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.achievementsBottomTiltedBox {
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background-color: #cbcbcb;
+    height: 60px;
+    position: relative;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
 }
 
 .projectTitle {

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button} from 'semantic-ui-react';
 
-const Images = require.context('../assets/', true)
+const Images = require.context('../assets/projects_images', true)
 
 const Project = (props) => {
     const {title, description, githubUrl, projectUrl, imageUrl, technologies} = props.data;
