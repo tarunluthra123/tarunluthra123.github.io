@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import SkillsGraph from "./SkillsGraph";
 import me from '../assets/me.jpg'
 import SkillsShowcase from "./SkillsShowcase";
 
@@ -7,7 +6,7 @@ import SkillsShowcase from "./SkillsShowcase";
 class AboutPage extends Component {
     decideImageHeight = () => {
         if (window.innerWidth > 550)
-            return 200
+            return 240
         else if (window.innerWidth > 400)
             return 150
         else
@@ -17,15 +16,18 @@ class AboutPage extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="container">
-                    {window.innerWidth <= 420 && <h1 align="center">Tarun Luthra</h1>}
+                <div className="aboutContainer">
+                    {window.innerWidth <= 420 &&
+                    <div align="center" className="nameHeading">Hi I am <strong>Tarun Luthra</strong></div>}
                     <div className="row">
-                        <div className="col-lg-2"/>
-                        <div className="col-md-4 col-sm-5 col-5 container-fluid ">
+                        <div className="col-lg-3"/>
+                        <div className="col-md-3 col-sm-5 col-5">
                             <img src={me} height={this.decideImageHeight()}/>
                         </div>
                         <div className="col-md col-sm col">
-                            {window.innerWidth > 420 && <h1>Tarun Luthra</h1>}
+                            <br/>
+                            {window.innerWidth > 420 &&
+                            <div className="nameHeading">Hi I am <strong>Tarun Luthra</strong></div>}
                             <p className="introductionText">
                                 I am a Computer Science undergrad.
                                 I am a proficient competitive programmer with advanced Algo-DS skills and a trained web
@@ -35,10 +37,10 @@ class AboutPage extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="diagonallyTiltedDivAbout">abcdc</div>
                 <SkillsShowcase/>
             </React.Fragment>
-        )
-            ;
+        );
     }
 }
 

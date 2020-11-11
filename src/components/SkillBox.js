@@ -4,7 +4,7 @@ import {Card, Image, List} from 'semantic-ui-react'
 const SkillBox = (props) => {
     const {title, listItems} = props
     return (
-        <Card>
+        <Card color={'teal'} raised>
             <Card.Content>
                 <Card.Header className="skillsHeading">{title}</Card.Header>
                 <div style={{"text-align": "center"}}>
