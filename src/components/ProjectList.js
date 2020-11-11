@@ -2,6 +2,7 @@ import React from 'react';
 import data from '../assets/data/projects_list.json'
 import Project from "./Project";
 import Fade from "react-reveal/Fade";
+import '../assets/css/project_list.css'
 
 
 const ProjectList = (props) => {
@@ -20,7 +21,9 @@ const ProjectList = (props) => {
                 <p style={{"color": "transparent"}}>Invisible Text here</p>
             </div>
             <div className="projectListBottomFillerBox">
-                <div className="diagonallyTiltedDivProjectsBottom"/>
+                <div className="p-0 m-0 diagonallyTiltedDivProjectsBottom">
+                    <br/>
+                </div>
             </div>
         </React.Fragment>
     );

@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'prociono';
+    src: url(https://github.com/theleagueof/prociono/blob/master/Prociono.ttf?raw=true) format("truetype");
+}
+
+@font-face {
+    font-family: 'Sorts Mill Goudy';
+    src: url(https://github.com/theleagueof/sorts-mill-goudy/blob/master/OFLGoudyStMTT.ttf?raw=true) format("truetype");
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background: #5b78c7;
+    position: fixed;
+    width: 102%;
+    z-index: 3;
+}
+
+.navBarName {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+    font-weight: bold;
+    /*background: red;*/
+    height: 100%;
+    /*top: -10%;*/
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navLinkItem {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5vh;
+    font-family: 'Sorts Mill Goudy', serif;
+    cursor: pointer;
+}
+
+.main {
+    top: 7vh;
+    height: 93vh;
+}
+
+@media screen and (max-width: 768px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background: white;
+    }
+
+    nav {
+        position: fixed;
+    }
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 3;
+    }
+
+
+    .nav-links {
+        position: fixed;
+        background: #5b78c7;
+        height: 100vh;
+        z-index: 2;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -10%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1215px at 90% -10%);
+        -webkit-clip-path: circle(1215px at 90% -10%);
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .navLinkItem {
+        font-size: 25px;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 1.0s;
+    }
+
+    .nav-links li.fade {
+        opacity: 1;
+    }
+}

@@ -1,157 +1,85 @@
 import React, {Component} from 'react';
-import {animateScroll as scroll, Element, Events, Link, scroller} from 'react-scroll'
-import {Nav, Navbar} from 'react-bootstrap';
+import {animateScroll as scroll, Element, Link} from 'react-scroll'
 import Achievements from "./Achievements";
-import {Icon, Popup} from "semantic-ui-react";
 import ProjectList from "./ProjectList";
 import AboutPage from "./AboutPage";
 import Footer from "./Footer";
 import ContactInfo from "./ContactInfo";
 import Fade from 'react-reveal/Fade';
+import '../assets/css/main_page.css'
 
 class MainPage extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            isDesktop: false
-        }
-    }
-
-    componentDidMount() {
-        this.updatePredicate();
-        window.addEventListener("resize", this.updatePredicate);
-        Events.scrollEvent.register("begin", function () {
-            console.log("begin", arguments);
-        });
-
-        Events.scrollEvent.register("end", function () {
-            console.log("end", arguments);
-        });
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.updatePredicate);
-        Events.scrollEvent.remove("begin");
-        Events.scrollEvent.remove("end");
-    }
-
-
-    scrollTo() {
-        scroller.scrollTo("scroll-to-element", {
-            duration: 800,
-            delay: 0,
-            smooth: "easeInOutQuart"
-        });
-    }
-
-    scrollToWithContainer() {
-        let goToContainer = new Promise((resolve, reject) => {
-            Events.scrollEvent.register("end", () => {
-                resolve();
-                Events.scrollEvent.remove("end");
-            });
-
-            scroller.scrollTo("scroll-container", {
-                duration: 800,
-                delay: 0,
-                smooth: "easeInOutQuart"
-            });
-        });
-
-        goToContainer.then(() =>
-            scroller.scrollTo("scroll-container-second-element", {
-                duration: 800,
-                delay: 0,
-                smooth: "easeInOutQuart",
-                containerId: "scroll-container"
-            })
-        );
-    }
-
-
-    updatePredicate = () => {
-        this.setState({isDesktop: window.innerWidth > 1000});
+        this.navLinks = React.createRef()
+        this.aboutRef = React.createRef()
+        this.projectRef = React.createRef()
+        this.achievementRef = React.createRef()
+        this.contactRef = React.createRef()
+        this.resumePdfRef = React.createRef()
     }
 
     scrollToTop = () => {
         scroll.scrollToTop();
     }
 
+    toggleBurgerMenu = () => {
+        if (window.innerWidth > 768)
+            return
+        this.navLinks.current.classList.toggle('open')
+        this.aboutRef.current.classList.toggle('fade')
+        this.projectRef.current.classList.toggle('fade')
+        this.achievementRef.current.classList.toggle('fade')
+        this.contactRef.current.classList.toggle('fade')
+        this.resumePdfRef.current.classList.toggle('fade')
+    }
+
     render() {
-        const {isDesktop} = this.state
         return (
             <React.Fragment>
-                <Navbar fixed="top" className="navbarContainer p-3">
-                    <Nav className="container-fluid row ">
-                        <Link activeClass="active" className="navLinks col" to="about" spy={true}
-                              smooth={true} duration={500}>
-                            {!isDesktop &&
-                            <Popup content={"Introduction"} trigger={
-                                <a href="#" className="navLinkText">
-                                    &#128102;
-                                </a>
-                            }/>}
-                            {isDesktop &&
-                            <a href="#" className="navLinkText">
-                                Introduction&#128102;
-                            </a>}
-                        </Link>
-
-                        <Link activeClass="active" className="navLinks col" to="projectsList" spy={true}
-                              smooth={true} duration={500}>
-                            {!isDesktop &&
-                            <Popup content={"Projects"} trigger={
-                                <a href="#" className="navLinkText">
-                                    &#128187;
-                                </a>
-                            }/>}
-                            {isDesktop &&
-                            <a href="#" className="navLinkText">
-                                Projects&#128187;
-                            </a>}
-                        </Link>
-
-                        <Link className="navLinks col" to="achievements" spy={true}
-                              smooth={true} duration={500}>
-                            {!isDesktop &&
-                            <Popup content={"Achievements"} trigger={
-                                <a href="#" className="navLinkText">
-                                    &#127941;
-                                </a>
-                            }/>}
-                            {isDesktop &&
-                            <a href="#" className="navLinkText">
-                                Achievements&#127941;
-                            </a>}
-                        </Link>
-                        <Link activeClass="active" className="navLinks col" to="contactInfo" spy={true}
-                              smooth={true} duration={500}>
-                            {!isDesktop &&
-                            <Popup content={"Contact"} trigger={
-                                <a href="#" className="navLinkText">
-                                    <Icon color="red" name="mail"/>
-                                </a>
-                            }/>}
-                            {isDesktop &&
-                            <a href="#" className="navLinkText">
-                                Contact<Icon color="red" name="mail"/>
-                            </a>}
-                        </Link>
-                        <div className="navLinks col">
-                            {!isDesktop &&
-                            <Popup content={"Résumé PDF"} trigger={
-                                <a href={'https://tarunluthra.me/Resume.pdf/'} target="_blank">
-                                    &#128196;
-                                </a>
-                            }/>}
-                            {isDesktop &&
-                            <a href={'https://tarunluthra.me/Resume.pdf/'} target="_blank">
-                                Résumé PDF&#128196;
+                <nav className="row">
+                    <div className="col-md navBarName">
+                        Tarun Luthra
+                    </div>
+                    <ul className="col-md nav-links" ref={this.navLinks}>
+                        <li ref={this.aboutRef}>
+                            <Link activeClass="active" className="navLinkItem" to="about" spy={true}
+                                  smooth={true} duration={500} onClick={this.toggleBurgerMenu}>
+                                Introduction
+                            </Link>
+                        </li>
+                        <li ref={this.projectRef}>
+                            <Link activeClass="active" className="navLinkItem" to="projectsList" spy={true}
+                                  smooth={true} duration={500} onClick={this.toggleBurgerMenu}>
+                                Projects
+                            </Link>
+                        </li>
+                        <li ref={this.achievementRef}>
+                            <Link className="navLinkItem" to="achievements" spy={true}
+                                  smooth={true} duration={500} onClick={this.toggleBurgerMenu}>
+                                Achievements
+                            </Link>
+                        </li>
+                        <li ref={this.contactRef}>
+                            <Link activeClass="active" className="navLinkItem" to="contactInfo" spy={true}
+                                  smooth={true} duration={500} onClick={this.toggleBurgerMenu}>
+                                Contact
+                            </Link>
+                        </li>
+                        <li ref={this.resumePdfRef}>
+                            <a href={'http://tarunluthra123.github.io/Resume.pdf'} className="navLinkItem"
+                               target="_blank" onClick={this.toggleBurgerMenu}>
+                                Résumé PDF
                             </a>
-                            }
-                        </div>
-                    </Nav>
-                </Navbar>
+                        </li>
+                    </ul>
+
+                    <div className="hamburger" onClick={this.toggleBurgerMenu}>
+                        <div className="line"/>
+                        <div className="line"/>
+                        <div className="line"/>
+                    </div>
+                </nav>
 
                 <div className="main">
                     <Element name="about" className="element">
@@ -159,11 +87,12 @@ class MainPage extends Component {
                     </Element>
 
                     <Element name="projectsList" className="element">
+                        <br/><br/>
                         <ProjectList/>
                     </Element>
 
                     <Element name="achievements" className="element">
-                            <Achievements/>
+                        <Achievements/>
                     </Element>
 
                     <Element name="contactInfo" className="element">

@@ -3,6 +3,7 @@ import SankalanLogo from '../assets/achievements_images/sankalan_logo.jpg';
 import MapsLogo from '../assets/achievements_images/maps_logo.jpg';
 import MOS_Powerpoint from '../assets/achievements_images/MOS_PowerPoint.jpg';
 import UmeedLogo from '../assets/achievements_images/umeed_logo.png';
+import '../assets/css/achievements_list.css'
 
 const Achievements = (props) => {
     return (
