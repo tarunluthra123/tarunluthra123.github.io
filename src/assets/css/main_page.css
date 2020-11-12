@@ -110,7 +110,7 @@ nav {
 
     .nav-links {
         position: fixed;
-        background: #5b78c7;
+        background: #323232;
         height: 100vh;
         z-index: 2;
         width: 100%;
@@ -156,4 +156,20 @@ nav {
     .nav-links li.fade {
         opacity: 1;
     }
+}
+
+.hamburger div {
+    transition: all 0.3s ease;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }

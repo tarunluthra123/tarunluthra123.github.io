@@ -12,11 +12,11 @@ class MainPage extends Component {
     constructor(props) {
         super(props);
         this.navLinks = React.createRef()
-        this.aboutRef = React.createRef()
         this.projectRef = React.createRef()
         this.achievementRef = React.createRef()
         this.contactRef = React.createRef()
         this.resumePdfRef = React.createRef()
+        this.burgerRef = React.createRef()
     }
 
     scrollToTop = () => {
@@ -27,11 +27,11 @@ class MainPage extends Component {
         if (window.innerWidth > 768)
             return
         this.navLinks.current.classList.toggle('open')
-        this.aboutRef.current.classList.toggle('fade')
         this.projectRef.current.classList.toggle('fade')
         this.achievementRef.current.classList.toggle('fade')
         this.contactRef.current.classList.toggle('fade')
         this.resumePdfRef.current.classList.toggle('fade')
+        this.burgerRef.current.classList.toggle('toggle')
     }
 
     render() {
@@ -45,12 +45,6 @@ class MainPage extends Component {
                         </Link>
                     </div>
                     <ul className="col-md nav-links" ref={this.navLinks}>
-                        {/*<li ref={this.aboutRef}>*/}
-                        {/*    <Link className="navLinkItem" to="about" spy={true}*/}
-                        {/*          smooth={true} duration={500} onClick={this.toggleBurgerMenu}>*/}
-                        {/*        About*/}
-                        {/*    </Link>*/}
-                        {/*</li>*/}
                         <li ref={this.projectRef}>
                             <Link activeClass="active" className="navLinkItem" to="projectsList" spy={true}
                                   smooth={true} duration={500} onClick={this.toggleBurgerMenu}>
@@ -77,10 +71,10 @@ class MainPage extends Component {
                         </li>
                     </ul>
 
-                    <div className="hamburger" onClick={this.toggleBurgerMenu}>
-                        <div className="line"/>
-                        <div className="line"/>
-                        <div className="line"/>
+                    <div className="hamburger" onClick={this.toggleBurgerMenu} ref={this.burgerRef}>
+                        <div className="line line1" />
+                        <div className="line line2" />
+                        <div className="line line3" />
                     </div>
                 </nav>
 
