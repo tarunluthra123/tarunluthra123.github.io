@@ -52,7 +52,7 @@ class MainPage extends Component {
                             </Link>
                         </li>
                         <li ref={this.achievementRef}>
-                            <Link className="navLinkItem" to="achievements" spy={true}
+                            <Link activeClass="active" className="navLinkItem" to="achievements" spy={true}
                                   smooth={true} duration={500} onClick={this.toggleBurgerMenu}>
                                 Achievements
                             </Link>

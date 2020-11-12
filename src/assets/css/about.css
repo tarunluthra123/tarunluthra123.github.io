@@ -5,6 +5,7 @@
     padding-top: 150px;
     padding-bottom: 120px;
     padding-right: 150px;
+    padding-left: 20%;
 }
 
 .diagonallyTiltedDivAbout {
@@ -35,4 +36,81 @@
 
 .aboutContainer {
     font: 'Rubik', sans-serif;
+}
+
+.skillsHeading {
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 23px
+}
+
+.skillName {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1360px) {
+    .nameHeading {
+        font-size: 250%;
+    }
+
+    .introductionText {
+        font-size: 130%;
+    }
+
+    .aboutContainer {
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutContainer {
+        padding-right: 120px;
+        padding-left: 11%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutContainer {
+        padding-right: 30px;
+        padding-left: 5%;
+    }
+
+    .nameHeading {
+        font-size: 220%;
+    }
+
+    .introductionText {
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aboutContainer {
+        padding-top: 100px;
+        padding-right: 15px;
+        padding-left: 2%;
+    }
+
+    .nameHeading {
+        font-size: 180%;
+        padding-left: 5%;
+    }
+
+    .introductionText {
+        font-size: 90%;
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nameHeading {
+        margin-top: 0;
+        margin-bottom: 1%;
+        padding-bottom: 3%;
+    }
+
+    .aboutContainer {
+        padding-bottom: 70px;
+    }
 }

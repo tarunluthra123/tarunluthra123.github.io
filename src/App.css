@@ -147,18 +147,6 @@
     padding-bottom: 0.3%;
 }
 
-
-.skillsHeading {
-    padding-bottom: 10px;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 23px
-}
-
-.skillName {
-    font-size: 18px;
-}
-
 @media (max-width: 1580px) {
     .navLinks {
         font-size: 100%;

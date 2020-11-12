@@ -86,12 +86,22 @@ nav {
     height: 93vh;
 }
 
+@media screen and (max-width: 900px) {
+    .navLinkItem {
+        font-size: 2vh;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .line {
         width: 30px;
         height: 3px;
         margin: 5px;
         background: white;
+    }
+
+    .navBarName {
+        top: 0%;
     }
 
     nav {
