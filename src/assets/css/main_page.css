@@ -125,7 +125,7 @@ nav {
         z-index: 2;
         width: 100%;
         flex-direction: column;
-        top: 50vh;
+        top: 7vh;
         clip-path: circle(50px at 90% -10%);
         -webkit-clip-path: circle(50px at 90% -10%);
         transition: all 1s ease-out;
