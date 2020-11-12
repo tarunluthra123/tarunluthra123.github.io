@@ -39,15 +39,18 @@ class MainPage extends Component {
             <React.Fragment>
                 <nav className="row">
                     <div className="col-md navBarName">
-                        Tarun Luthra
+                        <Link to="about" smooth={true} duration={500}>
+                        TARUN<br/>
+                        LUTHRA
+                        </Link>
                     </div>
                     <ul className="col-md nav-links" ref={this.navLinks}>
-                        <li ref={this.aboutRef}>
-                            <Link activeClass="active" className="navLinkItem" to="about" spy={true}
-                                  smooth={true} duration={500} onClick={this.toggleBurgerMenu}>
-                                Introduction
-                            </Link>
-                        </li>
+                        {/*<li ref={this.aboutRef}>*/}
+                        {/*    <Link className="navLinkItem" to="about" spy={true}*/}
+                        {/*          smooth={true} duration={500} onClick={this.toggleBurgerMenu}>*/}
+                        {/*        About*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
                         <li ref={this.projectRef}>
                             <Link activeClass="active" className="navLinkItem" to="projectsList" spy={true}
                                   smooth={true} duration={500} onClick={this.toggleBurgerMenu}>

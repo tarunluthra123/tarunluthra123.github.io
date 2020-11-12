@@ -38,7 +38,7 @@ const Project = (props) => {
                 <br/>
                 <b className="projectTitle">{title}</b>
                 <br/>
-                {technologies.map(tech => <a href="#" className="badge badge-light projectBadges p-2">{tech}</a>)}
+                {technologies.map(tech => <a className="badge badge-light projectBadges p-2">{tech}</a>)}
                 <p>
                     {description}
                 </p>

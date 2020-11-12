@@ -1,0 +1,38 @@
+.aboutContainer {
+    background-color: #0c0b0b;
+    color: #f6f6f6;
+    margin: 0;
+    padding-top: 150px;
+    padding-bottom: 120px;
+    padding-right: 150px;
+}
+
+.diagonallyTiltedDivAbout {
+    background-color: #0c0b0b;
+    height: 60px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+.skillsContainer {
+    /*padding-bottom: 120px;*/
+    padding-right: 150px;
+    margin: 0;
+}
+
+
+.introductionText {
+    font-size: 170%;
+    color: #bfbfbf;
+}
+
+.nameHeading {
+    font-family: 'prociono', serif;
+    font-size: 320%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    padding-bottom: 20px;
+}
+
+.aboutContainer {
+    font: 'Rubik', sans-serif;
+}

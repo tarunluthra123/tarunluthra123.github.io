@@ -13,7 +13,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 8vh;
-    background: #5b78c7;
+    background: #323232;
     position: fixed;
     width: 102%;
     z-index: 3;
@@ -29,7 +29,10 @@ nav {
     font-weight: bold;
     /*background: red;*/
     height: 100%;
-    /*top: -10%;*/
+    top: -10%;
+    color: #f1f1f1;
+    line-height: 120%;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -43,11 +46,39 @@ nav {
 }
 
 .navLinkItem {
-    color: white;
+    color: #bfbfbf;
     text-decoration: none;
     font-size: 2.5vh;
     font-family: 'Sorts Mill Goudy', serif;
     cursor: pointer;
+    position: relative;
+}
+
+.navbarContainer {
+    background-color: #888888;
+    color: white
+}
+
+.navLinkItem:hover {
+    color: white
+}
+
+.navLinkItem:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: relative;
+    margin-top: 7%;
+    background: #23e2c6 none repeat scroll 0 0;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navLinkItem:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 .main {

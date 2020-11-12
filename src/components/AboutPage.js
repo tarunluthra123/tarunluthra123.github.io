@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import me from '../assets/me.jpg'
 import SkillsShowcase from "./SkillsShowcase";
+import '../assets/css/about.css'
 
 
 class AboutPage extends Component {
@@ -18,7 +19,7 @@ class AboutPage extends Component {
             <React.Fragment>
                 <div className="aboutContainer">
                     {window.innerWidth <= 420 &&
-                    <div align="center" className="nameHeading">Hi I am <strong>Tarun Luthra</strong></div>}
+                    <div align="center" className="nameHeading">Hey, I'm <strong>Tarun</strong>.</div>}
                     <div className="row">
                         <div className="col-lg-3"/>
                         <div className="col-md-3 col-sm-5 col-5">
@@ -27,12 +28,10 @@ class AboutPage extends Component {
                         <div className="col-md col-sm col">
                             <br/>
                             {window.innerWidth > 420 &&
-                            <div className="nameHeading">Hi I am <strong>Tarun Luthra</strong></div>}
+                            <div className="nameHeading">Hey, I'm <strong>Tarun</strong>.</div>}
                             <p className="introductionText">
-                                I am a Computer Science undergrad.
-                                I am a proficient competitive programmer with advanced Algo-DS skills and a trained web
-                                developer.
-                                I love to create web apps with React and Ember.
+                                A web developer with advanced DS-Algo skills.
+                                I love to create web apps and solve new challenges everyday.
                             </p>
                         </div>
                     </div>
