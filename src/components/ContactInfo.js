@@ -23,22 +23,22 @@ const ContactInfo = (props) => {
                     <div className="socialMediaIcons col-md col-sm col">
                         <Popup content="tarunluthra123" trigger={
                             <a href="https://github.com/tarunluthra123" target="_blank">
-                                <img src={GithubLogo} height={50} className="m-2"/>
+                                <img src={GithubLogo} height={50} className="m-2" alt={"Github"}/>
                             </a>} hoverable>
-                            <img src={GithubProfileCard} height={140}/>
+                            <img src={GithubProfileCard} height={140} alt={"Github Profile"}/>
                         </Popup>
                         <Popup content="tarunluthra123" trigger={
                             <a href="https://www.linkedin.com/in/tarunluthra123/" target="_blank">
-                                <img src={LinkedinLogo} height={50} className="m-2"/>
+                                <img src={LinkedinLogo} height={50} className="m-2" alt={"Linkedin"}/>
                             </a>} hoverable>
-                            <img src={LinkedinCard} height={200}/>
+                            <img src={LinkedinCard} height={200} alt={"Linkedin Profile"}/>
                         </Popup>
                         <Popup content="tarunluthra987@gmail.com" trigger={
                             <a href="mailto:tarunluthra987@gmail.com">
-                                <img src={GmailLogo} height={50} className="m-2"/>
+                                <img src={GmailLogo} height={50} className="m-2" alt={"Mail"}/>
                             </a>} hoverable/>
                     </div>
-                    <div className="col-md-2 col-sm-1 col-1"></div>
+                    <div className="col-md-2 col-sm-1 col-1"/>
                 </div>
             </div>
         </React.Fragment>

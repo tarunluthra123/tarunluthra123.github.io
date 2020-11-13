@@ -1,13 +1,3 @@
-@font-face {
-    font-family: 'prociono';
-    src: url(https://github.com/theleagueof/prociono/blob/master/Prociono.ttf?raw=true) format("truetype");
-}
-
-@font-face {
-    font-family: 'Sorts Mill Goudy';
-    src: url(https://github.com/theleagueof/sorts-mill-goudy/blob/master/OFLGoudyStMTT.ttf?raw=true) format("truetype");
-}
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -49,7 +39,7 @@ nav {
     color: #bfbfbf;
     text-decoration: none;
     font-size: 2.5vh;
-    font-family: 'Sorts Mill Goudy', serif;
+    font-family: 'Merriweather', serif;
     cursor: pointer;
     position: relative;
 }
@@ -86,9 +76,9 @@ nav {
     height: 93vh;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
     .navLinkItem {
-        font-size: 2vh;
+        font-size: 1.5vh;
     }
 }
 
@@ -119,20 +109,20 @@ nav {
 
 
     .nav-links {
-        position: fixed;
+        position: relative;
         background: #323232;
         height: 100vh;
         z-index: 2;
         width: 100%;
         flex-direction: column;
         clip-path: circle(50px at 90% -10%);
-        -webkit-clip-path: circle(50px at 90% -10%);
+        --webkit-clip-path: circle(50px at 90% -10%);
         transition: all 1s ease-out;
     }
 
     .nav-links.open {
         clip-path: circle(1215px at 90% -10%);
-        -webkit-clip-path: circle(1215px at 90% -10%);
+        --webkit-clip-path: circle(1215px at 90% -10%);
     }
 
     .nav-links li {

@@ -10,7 +10,7 @@ const SkillBox = (props) => {
                 <div style={{"text-align": "center"}}>
                     <List animated verticalAlign='middle'>
                         {listItems.map(([skill, imgUrl]) => <List.Item>
-                            <Image height={40} src={imgUrl} className="skillImage"/>
+                            <Image height={40} src={imgUrl} className="skillImage" alt={skill}/>
                             <List.Content>
                                 <List.Header className="skillName">
                                     {skill}

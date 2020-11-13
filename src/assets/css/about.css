@@ -12,11 +12,10 @@
     background-color: #0c0b0b;
     height: 60px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    color: transparent;
 }
 
 .skillsContainer {
-    /*padding-bottom: 120px;*/
-    padding-right: 150px;
     margin: 0;
 }
 
@@ -27,7 +26,7 @@
 }
 
 .nameHeading {
-    font-family: 'prociono', serif;
+    font-family: 'Merriweather', serif;
     font-size: 320%;
     margin-top: 3%;
     margin-bottom: 2%;
@@ -49,6 +48,14 @@
     font-size: 18px;
 }
 
+.introductionPhoto {
+    height: 250px;
+}
+
+.upperNameHeading {
+    display: none
+}
+
 @media screen and (max-width: 1360px) {
     .nameHeading {
         font-size: 250%;
@@ -63,10 +70,21 @@
     }
 }
 
+
 @media screen and (max-width: 1000px) {
     .aboutContainer {
         padding-right: 120px;
         padding-left: 11%;
+    }
+
+    .introductionPhoto {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nameHeading {
+        font-size: 220%;
     }
 }
 
@@ -78,10 +96,16 @@
 
     .nameHeading {
         font-size: 220%;
+        padding-left: 3%;
     }
 
     .introductionText {
         font-size: 120%;
+        padding-left: 3%;
+    }
+
+    .introductionPhoto {
+        height: 185px;
     }
 }
 
@@ -99,18 +123,46 @@
 
     .introductionText {
         font-size: 90%;
-        padding-left: 5%;
+        padding-left: 7%;
+    }
+
+    .introductionPhoto {
+        height: 165px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .upperNameHeading {
+        display: block;
+    }
+
+    .inlineNameHeading {
+        display: none;
+    }
+
+    .introductionText {
+        padding-left: 12%;
     }
 }
 
 @media screen and (max-width: 450px) {
     .nameHeading {
         margin-top: 0;
-        margin-bottom: 1%;
-        padding-bottom: 3%;
+        margin-bottom: 1.5%;
+        padding-bottom: 15px;
     }
 
     .aboutContainer {
         padding-bottom: 70px;
+    }
+
+    .introductionPhoto {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .introductionPhoto {
+        height: 130px;
     }
 }
