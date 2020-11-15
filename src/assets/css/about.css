@@ -51,7 +51,11 @@
 
 .upperNameHeading {
     display: none;
-    overflow-y: hidden;
+}
+
+.upperNameHeading span {
+    transform: translateY(100%);
+    display: inline-block;
 }
 
 .inlineNameHeading {
@@ -142,6 +146,8 @@
 @media screen and (max-width: 460px) {
     .upperNameHeading {
         display: block;
+        overflow-y: hidden;
+        min-height: 65px;
     }
 
     .inlineNameHeading {
