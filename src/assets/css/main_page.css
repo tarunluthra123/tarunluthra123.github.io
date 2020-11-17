@@ -17,7 +17,7 @@ nav {
     align-items: center;
     font-size: 120%;
     font-weight: bold;
-    /*background: red;*/
+    text-shadow: 0.6vh 0.6vh black;
     height: 100%;
     top: -10%;
     color: #f1f1f1;

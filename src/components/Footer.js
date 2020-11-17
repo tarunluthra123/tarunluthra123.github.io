@@ -51,9 +51,9 @@ class Footer extends Component {
 
                     <div className="col-1 goToTopContainer m-2">
                         <Transition visible={visible} animation='scale' duration={500}>
-                            <a href="#" style={{"color": "white"}}>
+                            <span style={{"color": "white", cursor: "pointer"}}>
                                 <Icon name="angle double up" size="big" onClick={() => this.props.scrollToTop()}/>
-                            </a>
+                            </span>
                         </Transition>
                     </div>
                 </div>
