@@ -6,7 +6,7 @@
     padding-bottom: 120px;
     padding-right: 150px;
     padding-left: 20%;
-    font: 'Rubik', sans-serif;
+    font: "Rubik", sans-serif;
 }
 
 .diagonallyTiltedDivAbout {
@@ -20,7 +20,6 @@
     margin: 0;
 }
 
-
 .introductionText {
     font-size: 170%;
     color: #bfbfbf;
@@ -30,7 +29,7 @@
     padding-bottom: 10px;
     text-align: center;
     text-decoration: underline;
-    font-size: 23px
+    font-size: 23px;
 }
 
 .skillName {
@@ -42,7 +41,7 @@
 }
 
 .nameHeading {
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     font-size: 320%;
     margin-top: 1%;
     margin-bottom: 2%;
@@ -81,7 +80,6 @@
         padding-left: 10%;
     }
 }
-
 
 @media screen and (max-width: 1000px) {
     .aboutContainer {
