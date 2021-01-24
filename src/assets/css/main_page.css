@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -38,18 +43,18 @@ nav {
     color: #bfbfbf;
     text-decoration: none;
     font-size: 2.5vh;
-    font-family: 'Merriweather', serif;
+    font-family: "Merriweather", serif;
     cursor: pointer;
     position: relative;
 }
 
 .navbarContainer {
     background-color: #888888;
-    color: white
+    color: white;
 }
 
 .navLinkItem:hover {
-    color: white
+    color: white;
 }
 
 .navLinkItem:after {
@@ -59,7 +64,7 @@ nav {
     height: 2px;
     left: 50%;
     position: relative;
-    margin-top: 7%;
+    margin-top: 0.2vw;
     background: #23e2c6 none repeat scroll 0 0;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
@@ -106,7 +111,6 @@ nav {
         z-index: 3;
     }
 
-
     .nav-links {
         position: relative;
         background: #323232;
@@ -149,7 +153,7 @@ nav {
     }
 
     .nav-links li:nth-child(5) {
-        transition: all 0.5s ease 1.0s;
+        transition: all 0.5s ease 1s;
     }
 
     .nav-links li.fade {

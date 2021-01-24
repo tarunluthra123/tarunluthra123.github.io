@@ -38,6 +38,7 @@
 
 .introductionPhoto {
     height: 250px;
+    border-radius: 10px;
 }
 
 .nameHeading {
@@ -65,6 +66,10 @@
 .inlineNameHeading span {
     transform: translateY(100%);
     display: inline-block;
+}
+
+span.nameText {
+    color: blue;
 }
 
 @media screen and (max-width: 1360px) {

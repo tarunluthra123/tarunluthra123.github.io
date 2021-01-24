@@ -46,9 +46,7 @@ const AboutPage = (props) => {
         <React.Fragment>
             <div className="aboutContainer">
                 <div align="center" className="upperNameHeading nameHeading">
-                    <span ref={upperNameHeadingRef}>
-                        Hey, I'm <strong>Tarun</strong>.
-                    </span>
+                    <span ref={upperNameHeadingRef}>Hey, I'm Tarun.</span>
                 </div>
                 <div className="row">
                     <div className="col-md-5 col-sm-4 col-4">
@@ -63,7 +61,7 @@ const AboutPage = (props) => {
                         <br />
                         <div className="inlineNameHeading nameHeading">
                             <span ref={inlineNameHeadingRef}>
-                                Hey, I'm <strong>Tarun</strong>.
+                                Hey, I'm Tarun.
                             </span>
                         </div>
                         <p

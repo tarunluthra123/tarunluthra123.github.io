@@ -1,82 +1,65 @@
 {
-  "1": {
-    "title": "Typing Speed Test",
-    "description": "Online typing speed test to measure the typing speed of a user accurately.",
-    "githubUrl": "https://github.com/tarunluthra123/Project-Typing-Speed-Test",
-    "projectUrl": "https://tarunluthra123.github.io/Project-Typing-Speed-Test/",
-    "imageUrl": "typing_speed_test_gif.gif",
-    "technologies": [
-      "HTML5",
-      "CSS",
-      "JQuery"
-    ]
-  },
-  "2": {
-    "title": "Shopping Website",
-    "description": "A shopping cart website where users can search for products, find their details and add or remove them from cart.",
-    "githubUrl": "https://github.com/tarunluthra123/Shopping-Website-Project",
-    "projectUrl": "https://shopping-cart-project123.herokuapp.com/",
-    "imageUrl": "shopping_website_gif.gif",
-    "technologies": [
-      "HTML5",
-      "CSS",
-      "JQuery",
-      "ExpressJS",
-      "MySQL"
-    ]
-  },
-  "3": {
-    "title": "Github Explorer",
-    "description": "A Github Explorer web app to search and explore github user profiles using data fetched from Github REST API. The page uses infinite scroll to display the list of repositories efficiently.",
-    "githubUrl": "https://github.com/tarunluthra123/GithubExplorer-React",
-    "projectUrl": "https://tarunluthra123.github.io/GithubExplorer-React/",
-    "imageUrl": "github_explorer_screenshot.png",
-    "technologies": [
-      "ReactJS",
-      "REST API",
-      "Github"
-    ]
-  },
-  "4": {
-    "title": "Tambola",
-    "description": "Play the popular board game Tambola (Indian Bingo) with this fun and responsive random number generator with special messages for each number.",
-    "githubUrl": "https://github.com/tarunluthra123/Tambola-React",
-    "projectUrl": "https://tarunluthra123.github.io/Tambola-React/",
-    "imageUrl": "Tambola_Screenshot.png",
-    "technologies": [
-      "ReactJS",
-      "Bootstrap",
-      "Animations"
-    ]
-  },
-  "5": {
-    "title": "Movie Database",
-    "description": "A Movie Database where users can browse movies and segragate them into separate lists. Movies can be searched with title or by genres.",
-    "githubUrl": "https://github.com/tarunluthra123/MovieDB-React",
-    "projectUrl": "https://movie-db-reactjs.herokuapp.com/",
-    "imageUrl": "movie_db_react_gif.gif",
-    "technologies": [
-      "ReactJS",
-      "ExpressJS",
-      "MongoDB",
-      "REST APIs",
-      "Bootstrap"
-    ]
-  },
-  "6": {
-    "title": "Kollab Space",
-    "description": "A collab app for students,teachers and colleagues to interact, share and collaborate ideas in a simplified manner and work together with increased productivity in a sophisticated environment",
-    "githubUrl": "https://github.com/tarunluthra123/Kollab-Space",
-    "projectUrl": "https://kollab-space.herokuapp.com/",
-    "imageUrl": "kollab_space_gif.gif",
-    "technologies": [
-      "Typescript",
-      "React",
-      "Express",
-      "Socket.io",
-      "JWTs",
-      "PostgreSQL",
-      "Semantic UI CSS"
-    ]
-  }
+    "1": {
+        "title": "Typing Speed Test",
+        "description": "Online typing speed test to measure the typing speed of a user accurately.",
+        "githubUrl": "https://github.com/tarunluthra123/Project-Typing-Speed-Test",
+        "projectUrl": "https://tarunluthra123.github.io/Project-Typing-Speed-Test/",
+        "imageUrl": "typing_speed_test_gif.gif",
+        "technologies": ["HTML5", "CSS", "JQuery"]
+    },
+    "2": {
+        "title": "Shopping Website",
+        "description": "A shopping cart website where users can search for products, find their details and add or remove them from cart.",
+        "githubUrl": "https://github.com/tarunluthra123/Shopping-Website-Project",
+        "projectUrl": "https://shopping-cart-project123.herokuapp.com/",
+        "imageUrl": "shopping_website_gif.gif",
+        "technologies": ["HTML5", "CSS", "JQuery", "ExpressJS", "MySQL"]
+    },
+    "3": {
+        "title": "Github Explorer",
+        "description": "A Github Explorer web app to search and explore github user profiles using data fetched from Github REST API. The page uses infinite scroll to display the list of repositories efficiently.",
+        "githubUrl": "https://github.com/tarunluthra123/GithubExplorer-React",
+        "projectUrl": "https://tarunluthra123.github.io/GithubExplorer-React/",
+        "imageUrl": "github_explorer_screenshot.png",
+        "technologies": ["ReactJS", "REST API", "Github"]
+    },
+    "4": {
+        "title": "Tambola",
+        "description": "Play the popular board game Tambola (Indian Bingo) with this fun and responsive random number generator with special messages for each number.",
+        "githubUrl": "https://github.com/tarunluthra123/Tambola-React",
+        "projectUrl": "https://tarunluthra123.github.io/Tambola-React/",
+        "imageUrl": "Tambola_Screenshot.png",
+        "technologies": ["ReactJS", "Bootstrap", "Animations"]
+    },
+    "5": {
+        "title": "Movie Database",
+        "description": "A Movie Database where users can browse movies and segragate them into separate lists. Movies can be searched with title or by genres.",
+        "githubUrl": "https://github.com/tarunluthra123/MovieDB-React",
+        "projectUrl": "https://movie-db-reactjs.herokuapp.com/",
+        "imageUrl": "movie_db_react_gif.gif",
+        "technologies": [
+            "ReactJS",
+            "ExpressJS",
+            "MongoDB",
+            "JWTs",
+            "REST APIs",
+            "Bootstrap"
+        ]
+    },
+    "6": {
+        "title": "Kollab Space",
+        "description": "A collab app for students,teachers and colleagues to interact, share and collaborate ideas in a simplified manner and work together with increased productivity in a sophisticated environment",
+        "githubUrl": "https://github.com/tarunluthra123/Kollab-Space",
+        "projectUrl": "https://kollab-space.herokuapp.com/",
+        "imageUrl": "kollab_space_gif.gif",
+        "technologies": [
+            "Typescript",
+            "React",
+            "Express",
+            "Socket.io",
+            "JWTs",
+            "PostgreSQL",
+            "Semantic UI CSS"
+        ]
+    }
 }

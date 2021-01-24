@@ -1,38 +1,37 @@
-import React, {Component} from 'react';
-import {animateScroll as scroll, Element, Link} from 'react-scroll'
+import React, { Component } from "react";
+import { animateScroll as scroll, Element, Link } from "react-scroll";
 import Achievements from "./Achievements";
 import ProjectList from "./ProjectList";
 import AboutPage from "./AboutPage";
 import Footer from "./Footer";
 import ContactInfo from "./ContactInfo";
-import Fade from 'react-reveal/Fade';
-import '../assets/css/main_page.css'
+import Fade from "react-reveal/Fade";
+import "../assets/css/main_page.css";
 
 class MainPage extends Component {
     constructor(props) {
         super(props);
-        this.navLinks = React.createRef()
-        this.projectRef = React.createRef()
-        this.achievementRef = React.createRef()
-        this.contactRef = React.createRef()
-        this.resumePdfRef = React.createRef()
-        this.burgerRef = React.createRef()
+        this.navLinks = React.createRef();
+        this.projectRef = React.createRef();
+        this.achievementRef = React.createRef();
+        this.contactRef = React.createRef();
+        this.resumePdfRef = React.createRef();
+        this.burgerRef = React.createRef();
     }
 
     scrollToTop = () => {
         scroll.scrollToTop();
-    }
+    };
 
     toggleBurgerMenu = () => {
-        if (window.innerWidth > 768)
-            return
-        this.navLinks.current.classList.toggle('open')
-        this.projectRef.current.classList.toggle('fade')
-        this.achievementRef.current.classList.toggle('fade')
-        this.contactRef.current.classList.toggle('fade')
-        this.resumePdfRef.current.classList.toggle('fade')
-        this.burgerRef.current.classList.toggle('toggle')
-    }
+        if (window.innerWidth > 768) return;
+        this.navLinks.current.classList.toggle("open");
+        this.projectRef.current.classList.toggle("fade");
+        this.achievementRef.current.classList.toggle("fade");
+        this.contactRef.current.classList.toggle("fade");
+        this.resumePdfRef.current.classList.toggle("fade");
+        this.burgerRef.current.classList.toggle("toggle");
+    };
 
     render() {
         return (
@@ -40,38 +39,70 @@ class MainPage extends Component {
                 <nav className="row">
                     <div className="col-md navBarName">
                         <Link to="about" smooth={true} duration={500}>
-                        TARUN<br/>
-                        LUTHRA
+                            TARUN
+                            <br />
+                            LUTHRA
                         </Link>
                     </div>
                     <ul className="col-md nav-links" ref={this.navLinks}>
                         <li ref={this.projectRef}>
-                            <Link activeClass="active" className="navLinkItem" to="projectsList" spy={true}
-                                  smooth={true} duration={500} onClick={this.toggleBurgerMenu}>
-                                Projects
+                            <Link
+                                activeClass="active"
+                                className="navLinkItem"
+                                to="projectsList"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onClick={this.toggleBurgerMenu}
+                            >
+                                <span>Projects{"  "}</span>
                             </Link>
                         </li>
                         <li ref={this.achievementRef}>
-                            <Link activeClass="active" className="navLinkItem" to="achievements" spy={true}
-                                  smooth={true} duration={500} onClick={this.toggleBurgerMenu}>
-                                Achievements
+                            <Link
+                                activeClass="active"
+                                className="navLinkItem"
+                                to="achievements"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onClick={this.toggleBurgerMenu}
+                            >
+                                <span>Achievements</span>
                             </Link>
                         </li>
                         <li ref={this.contactRef}>
-                            <Link activeClass="active" className="navLinkItem" to="contactInfo" spy={true}
-                                  smooth={true} duration={500} onClick={this.toggleBurgerMenu}>
+                            <Link
+                                activeClass="active"
+                                className="navLinkItem"
+                                to="contactInfo"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                onClick={this.toggleBurgerMenu}
+                            >
                                 Contact
                             </Link>
                         </li>
                         <li ref={this.resumePdfRef}>
-                            <a href={'http://tarunluthra123.github.io/Resume.pdf'} className="navLinkItem"
-                               target="_blank" onClick={this.toggleBurgerMenu}>
+                            <a
+                                href={
+                                    "http://tarunluthra123.github.io/Resume.pdf"
+                                }
+                                className="navLinkItem"
+                                target="_blank"
+                                onClick={this.toggleBurgerMenu}
+                            >
                                 Résumé PDF
                             </a>
                         </li>
                     </ul>
 
-                    <div className="hamburger" onClick={this.toggleBurgerMenu} ref={this.burgerRef}>
+                    <div
+                        className="hamburger"
+                        onClick={this.toggleBurgerMenu}
+                        ref={this.burgerRef}
+                    >
                         <div className="line line1" />
                         <div className="line line2" />
                         <div className="line line3" />
@@ -80,28 +111,32 @@ class MainPage extends Component {
 
                 <div className="main">
                     <Element name="about" className="element">
-                        <AboutPage/>
+                        <AboutPage />
                     </Element>
 
                     <Element name="projectsList" className="element">
-                        <br/><br/>
-                        <ProjectList/>
+                        <br />
+                        <br />
+                        <ProjectList />
                     </Element>
 
                     <Element name="achievements" className="element">
-                        <Achievements/>
+                        <Achievements />
                     </Element>
 
                     <Element name="contactInfo" className="element">
-                        <br/><br/>
+                        <br />
+                        <br />
                         <Fade bottom>
-                            <br/><br/>
-                            <ContactInfo/>
+                            <br />
+                            <br />
+                            <ContactInfo />
                         </Fade>
                     </Element>
 
-                    <br/><br/>
-                    <Footer scrollToTop={this.scrollToTop}/>
+                    <br />
+                    <br />
+                    <Footer scrollToTop={this.scrollToTop} />
                 </div>
             </React.Fragment>
         );
