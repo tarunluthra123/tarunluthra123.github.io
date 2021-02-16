@@ -3,10 +3,11 @@
     color: #f6f6f6;
     margin: 0;
     padding-top: 150px;
-    padding-bottom: 120px;
+    padding-bottom: 110px;
     padding-right: 150px;
     padding-left: 20%;
     font: "Rubik", sans-serif;
+    border: 5px solid #0c0b0b;
 }
 
 .diagonallyTiltedDivAbout {
@@ -14,6 +15,7 @@
     height: 60px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
     color: transparent;
+    border: 5px solid #0c0b0b;
 }
 
 .skillsContainer {

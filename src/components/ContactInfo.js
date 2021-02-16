@@ -18,10 +18,10 @@ const ContactInfo = (props) => {
                 <div className="container-fluid row">
                     <div className="col-md-2 col-sm-1 col-1"></div>
                     <div className="socialMediaIcons col-md col-sm col">
-                        <a href="https://github.com/tarunluthra123" target="_blank">
+                        <a href="https://github.com/tarunluthra123" target="_blank" rel="noopener noreferrer">
                             <img src={GithubLogo} height={50} className="m-2" alt={"Github"}/>
                         </a>
-                        <a href="https://www.linkedin.com/in/tarunluthra123/" target="_blank">
+                        <a href="https://www.linkedin.com/in/tarunluthra123/" target="_blank" rel="noopener noreferrer">
                             <img src={LinkedinLogo} height={50} className="m-2" alt={"Linkedin"}/>
                         </a>
                         <a href="mailto:tarunluthra987@gmail.com">

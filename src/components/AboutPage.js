@@ -3,6 +3,7 @@ import me from "../assets/me.jpg";
 import SkillsShowcase from "./SkillsShowcase";
 import "../assets/css/about.css";
 import { TimelineMax, gsap, CSSPlugin } from "gsap/all";
+import {Icon} from 'semantic-ui-react'
 
 const AboutPage = (props) => {
     gsap.registerPlugin(CSSPlugin);
@@ -68,10 +69,21 @@ const AboutPage = (props) => {
                             className="introductionText"
                             ref={introductionTextRef}
                         >
-                            A web developer with advanced DS-Algo skills. I love
+                            A fullstack developer with advanced DS-Algo skills. I love
                             to create web apps and solve new challenges
                             everyday.
                         </p>
+                        <a href="https://github.com/tarunluthra123" target="_blank" rel="noopener noreferrer" style={{ "color":"white"}}>
+                            <Icon name='github' size="big"></Icon>
+                        </a>
+                        <a href="mailto:tarunluthra987@gmail.com" style={{ "color":"white"}}>
+                            <Icon name='mail' size="big"></Icon>
+                        </a>
+                        <a href="https://www.linkedin.com/in/tarunluthra123/" target="_blank" rel="noopener noreferrer" style={{ "color":"white"}}>
+                            <Icon name='linkedin' size="big"></Icon>
+                        </a>
+
+                        
                     </div>
                 </div>
             </div>

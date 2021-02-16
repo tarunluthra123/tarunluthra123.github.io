@@ -65,7 +65,7 @@ nav {
     left: 50%;
     position: relative;
     margin-top: 0.2vw;
-    background: #23e2c6 none repeat scroll 0 0;
+    background: #aca7a7 none repeat scroll 0 0;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
