@@ -12,6 +12,12 @@ const AboutPage = (props) => {
     const inlineNameHeadingRef = useRef();
     const upperNameHeadingRef = useRef();
     const tl = new TimelineMax();
+    const iconWidth = () => {
+        if (window.innerWidth >= 768)
+            return "big"
+        else
+            return "large"
+    }
 
     useEffect(() => {
         tl.fromTo(
@@ -73,15 +79,17 @@ const AboutPage = (props) => {
                             to create web apps and solve new challenges
                             everyday.
                         </p>
-                        <a href="https://github.com/tarunluthra123" target="_blank" rel="noopener noreferrer" style={{ "color":"white"}}>
-                            <Icon name='github' size="big"></Icon>
-                        </a>
-                        <a href="mailto:tarunluthra987@gmail.com" style={{ "color":"white"}}>
-                            <Icon name='mail' size="big"></Icon>
-                        </a>
-                        <a href="https://www.linkedin.com/in/tarunluthra123/" target="_blank" rel="noopener noreferrer" style={{ "color":"white"}}>
-                            <Icon name='linkedin' size="big"></Icon>
-                        </a>
+                        <span className="contact-icons-about-section">
+                            <a href="https://github.com/tarunluthra123" target="_blank" rel="noopener noreferrer" style={{ "color":"white"}}>
+                                <Icon name='github' size={iconWidth()}></Icon>
+                            </a>
+                            <a href="mailto:tarunluthra987@gmail.com" style={{ "color":"white"}}>
+                                <Icon name='mail' size={iconWidth()}></Icon>
+                            </a>
+                            <a href="https://www.linkedin.com/in/tarunluthra123/" target="_blank" rel="noopener noreferrer" style={{ "color":"white"}}>
+                                <Icon name='linkedin' size={iconWidth()}></Icon>
+                            </a>
+                        </span>
 
                         
                     </div>

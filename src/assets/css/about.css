@@ -70,10 +70,6 @@
     display: inline-block;
 }
 
-span.nameText {
-    color: blue;
-}
-
 @media screen and (max-width: 1360px) {
     .nameHeading {
         font-size: 250%;
@@ -124,6 +120,10 @@ span.nameText {
     .introductionPhoto {
         height: 185px;
     }
+
+    span.contact-icons-about-section {
+        padding-left: 3%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -140,6 +140,10 @@ span.nameText {
 
     .introductionText {
         font-size: 90%;
+        padding-left: 7%;
+    }
+
+    span.contact-icons-about-section {
         padding-left: 7%;
     }
 
@@ -160,6 +164,10 @@ span.nameText {
     }
 
     .introductionText {
+        padding-left: 12%;
+    }
+
+    span.contact-icons-about-section {
         padding-left: 12%;
     }
 }
