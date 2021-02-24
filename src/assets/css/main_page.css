@@ -95,7 +95,8 @@ nav {
     }
 
     .navBarName {
-        top: 0%;
+        top: 10%;
+        z-index: 3;
     }
 
     nav {
@@ -114,13 +115,16 @@ nav {
     .nav-links {
         position: relative;
         background: #323232;
+        z-index: 500;
         height: 100vh;
         z-index: 2;
         width: 100%;
         flex-direction: column;
+        justify-content: space-evenly;
         clip-path: circle(50px at 90% -10%);
         --webkit-clip-path: circle(50px at 90% -10%);
         transition: all 1s ease-out;
+        overflow: hidden;
     }
 
     .nav-links.open {
