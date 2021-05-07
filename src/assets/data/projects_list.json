@@ -61,5 +61,18 @@
             "PostgreSQL",
             "Semantic UI CSS"
         ]
+    },
+    "7": {
+        "title": "Hulu Clone",
+        "description": "A Hulu clone made with Next.js and Tailwind CSS which allows Server side rendering and SEO along with minimal headless CSS. The clone provides a sophisticated and subtle UI to the user to browse and explore movies and much more.",
+        "githubUrl": "https://github.com/tarunluthra123/Hulu-Clone",
+        "projectUrl": "https://hulu-clone-amber.vercel.app/",
+        "imageUrl": "hulu-clone-screenshot.png",
+        "technologies": [
+            "Next.js",
+            "Tailwind CSS",
+            "Server Side Rendering",
+            "SEO"
+        ]
     }
 }
