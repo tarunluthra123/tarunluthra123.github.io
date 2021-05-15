@@ -91,6 +91,7 @@ class MainPage extends Component {
                                 }
                                 className="navLinkItem"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 onClick={this.toggleBurgerMenu}
                             >
                                 Résumé PDF

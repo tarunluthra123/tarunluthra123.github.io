@@ -74,5 +74,13 @@
             "Server Side Rendering",
             "SEO"
         ]
+    },
+    "8": {
+        "title": "LinkedIn Clone",
+        "description": "A fully functional web responsive LinkedIn clone with realtime data fetching and updates. Supports email/password and Google auth login. Complete state management with Redux and much more...",
+        "githubUrl": "https://github.com/tarunluthra123/Linkedin-Clone",
+        "projectUrl": "https://linkedin-clone-livid.vercel.app/",
+        "imageUrl": "Linkedin_clone.gif",
+        "technologies": ["Next.js", "Tailwind CSS", "React Redux", "Firebase"]
     }
 }
