@@ -17,6 +17,7 @@ class MainPage extends Component {
         this.contactRef = React.createRef();
         this.resumePdfRef = React.createRef();
         this.burgerRef = React.createRef();
+        this.blogsRef = React.createRef();
     }
 
     scrollToTop = () => {
@@ -30,6 +31,7 @@ class MainPage extends Component {
         this.achievementRef.current.classList.toggle("fade");
         this.contactRef.current.classList.toggle("fade");
         this.resumePdfRef.current.classList.toggle("fade");
+        this.blogsRef.current.classList.toggle("fade");
         this.burgerRef.current.classList.toggle("toggle");
     };
 
@@ -83,6 +85,17 @@ class MainPage extends Component {
                             >
                                 Contact
                             </Link>
+                        </li>
+                        <li ref={this.blogsRef}>
+                            <a
+                                href={"https://tarun-luthra.medium.com/"}
+                                className="navLinkItem"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={this.toggleBurgerMenu}
+                            >
+                                Blogs
+                            </a>
                         </li>
                         <li ref={this.resumePdfRef}>
                             <a

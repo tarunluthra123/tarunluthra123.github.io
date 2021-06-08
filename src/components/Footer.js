@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Icon, Transition } from "semantic-ui-react";
 
-const Footer = () => {
+const Footer = (props) => {
     const [visible, setVisible] = useState(true);
 
     useEffect(() => {
@@ -58,7 +58,7 @@ const Footer = () => {
                             <Icon
                                 name="angle double up"
                                 size="big"
-                                onClick={() => this.props.scrollToTop()}
+                                onClick={() => props.scrollToTop()}
                             />
                         </span>
                     </Transition>
