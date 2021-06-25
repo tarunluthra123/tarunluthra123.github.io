@@ -31,21 +31,6 @@
         "imageUrl": "Tambola_Screenshot.png",
         "technologies": ["ReactJS", "Bootstrap", "Animations"]
     },
-    "5": {
-        "title": "Movie Database",
-        "description": "A Movie Database where users can browse movies and segragate them into separate lists. Movies can be searched with title or by genres.",
-        "githubUrl": "https://github.com/tarunluthra123/MovieDB-React",
-        "projectUrl": "https://movie-db-reactjs.herokuapp.com/",
-        "imageUrl": "movie_db_react_gif.gif",
-        "technologies": [
-            "ReactJS",
-            "ExpressJS",
-            "MongoDB",
-            "JWTs",
-            "REST APIs",
-            "Bootstrap"
-        ]
-    },
     "6": {
         "title": "Kollab Space",
         "description": "A collab app for students,teachers and colleagues to interact, share and collaborate ideas in a simplified manner and work together with increased productivity in a sophisticated environment",
@@ -64,15 +49,17 @@
     },
     "7": {
         "title": "Hulu Clone",
-        "description": "A Hulu clone made with Next.js and Tailwind CSS which allows Server side rendering and SEO along with minimal headless CSS. The clone provides a sophisticated and subtle UI to the user to browse and explore movies and much more.",
+        "description": "A Hulu clone made with Next.js and Tailwind CSS which allows Server side rendering and SEO along with minimal headless CSS. The project provides an attractive and interactive UI where users can search, browse and segregate their entertainment preferences into various lists. Special care has been taken to make every component fully web responsive.",
         "githubUrl": "https://github.com/tarunluthra123/Hulu-Clone",
         "projectUrl": "https://hulu-clone-amber.vercel.app/",
         "imageUrl": "hulu-clone-screenshot.png",
         "technologies": [
             "Next.js",
             "Tailwind CSS",
-            "Server Side Rendering",
-            "SEO"
+            "Redux",
+            "Express",
+            "MongoDB",
+            "JWT"
         ]
     },
     "8": {
