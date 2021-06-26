@@ -1,20 +1,4 @@
 {
-    "1": {
-        "title": "Typing Speed Test",
-        "description": "Online typing speed test to measure the typing speed of a user accurately.",
-        "githubUrl": "https://github.com/tarunluthra123/Project-Typing-Speed-Test",
-        "projectUrl": "https://tarunluthra123.github.io/Project-Typing-Speed-Test/",
-        "imageUrl": "typing_speed_test_gif.gif",
-        "technologies": ["HTML5", "CSS", "JQuery"]
-    },
-    "2": {
-        "title": "Shopping Website",
-        "description": "A shopping cart website where users can search for products, find their details and add or remove them from cart.",
-        "githubUrl": "https://github.com/tarunluthra123/Shopping-Website-Project",
-        "projectUrl": "https://shopping-cart-project123.herokuapp.com/",
-        "imageUrl": "shopping_website_gif.gif",
-        "technologies": ["HTML5", "CSS", "JQuery", "ExpressJS", "MySQL"]
-    },
     "3": {
         "title": "Github Explorer",
         "description": "A Github Explorer web app to search and explore github user profiles using data fetched from Github REST API. The page uses infinite scroll to display the list of repositories efficiently.",
@@ -52,7 +36,7 @@
         "description": "A Hulu clone made with Next.js and Tailwind CSS which allows Server side rendering and SEO along with minimal headless CSS. The project provides an attractive and interactive UI where users can search, browse and segregate their entertainment preferences into various lists. Special care has been taken to make every component fully web responsive.",
         "githubUrl": "https://github.com/tarunluthra123/Hulu-Clone",
         "projectUrl": "https://hulu-clone-amber.vercel.app/",
-        "imageUrl": "hulu-clone-screenshot.png",
+        "imageUrl": "hulu_clone.gif",
         "technologies": [
             "Next.js",
             "Tailwind CSS",
