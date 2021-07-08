@@ -1,14 +1,4 @@
 ### My Resume
-I have used several different technologies to build this responsive and interactive resume.
-<br>
-Technologies used : 
-<ul>
-<li>React</li>
-<li>Bootstrap</li>
-<li>Semantic UI</li>
-<li>Chart.js</li>
-</ul>
-
 You can view this resume [here](https://tarunluthra123.github.io/).
 
 Only a small portion of the data is hardcoded into JSX. Rather most of it is obtained from JSON objects stored in /src/assets/data.

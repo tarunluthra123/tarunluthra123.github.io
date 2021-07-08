@@ -5,7 +5,11 @@
         "githubUrl": "https://github.com/tarunluthra123/GithubExplorer-React",
         "projectUrl": "https://tarunluthra123.github.io/GithubExplorer-React/",
         "imageUrl": "github_explorer_screenshot.png",
-        "technologies": ["ReactJS", "REST API", "Github"]
+        "technologies": [
+            "ReactJS",
+            "REST API",
+            "Github"
+        ]
     },
     "4": {
         "title": "Tambola",
@@ -13,7 +17,11 @@
         "githubUrl": "https://github.com/tarunluthra123/Tambola-React",
         "projectUrl": "https://tarunluthra123.github.io/Tambola-React/",
         "imageUrl": "Tambola_Screenshot.png",
-        "technologies": ["ReactJS", "Bootstrap", "Animations"]
+        "technologies": [
+            "ReactJS",
+            "Bootstrap",
+            "Animations"
+        ]
     },
     "6": {
         "title": "Kollab Space",
@@ -33,7 +41,7 @@
     },
     "7": {
         "title": "Hulu Clone",
-        "description": "A Hulu clone made with Next.js and Tailwind CSS which allows Server side rendering and SEO along with minimal headless CSS. The project provides an attractive and interactive UI where users can search, browse and segregate their entertainment preferences into various lists. Special care has been taken to make every component fully web responsive.",
+        "description": "A fully functional, responsive and user friendly Hulu clone where users can browse and search their favourite movies and shows, sort them into lists and much more....",
         "githubUrl": "https://github.com/tarunluthra123/Hulu-Clone",
         "projectUrl": "https://hulu-clone-amber.vercel.app/",
         "imageUrl": "hulu_clone.gif",
@@ -48,10 +56,15 @@
     },
     "8": {
         "title": "LinkedIn Clone",
-        "description": "A fully functional web responsive LinkedIn clone with realtime data fetching and updates. Supports email/password and Google auth login. Complete state management with Redux and much more...",
+        "description": "A fully web resposive LinkedIn Clone which allows to create and read posts, comment and improve their social experience with realtime updates with a minimal and attractive UI.",
         "githubUrl": "https://github.com/tarunluthra123/Linkedin-Clone",
         "projectUrl": "https://linkedin-clone-livid.vercel.app/",
         "imageUrl": "Linkedin_clone.gif",
-        "technologies": ["Next.js", "Tailwind CSS", "React Redux", "Firebase"]
+        "technologies": [
+            "Next.js",
+            "Tailwind CSS",
+            "Redux",
+            "Firebase"
+        ]
     }
 }
