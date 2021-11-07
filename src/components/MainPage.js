@@ -88,7 +88,7 @@ class MainPage extends Component {
             </li>
             <li ref={this.blogsRef}>
               <a
-                href={"https://blogs.tarunluthra.me/"}
+                href={"https://blogs.tarunluthra.in/"}
                 className="navLinkItem"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -99,7 +99,7 @@ class MainPage extends Component {
             </li>
             <li ref={this.resumePdfRef}>
               <a
-                href={"http://tarunluthra123.github.io/Resume.pdf"}
+                href={"https://resume.tarunluthra.in/"}
                 className="navLinkItem"
                 target="_blank"
                 rel="noopener noreferrer"
