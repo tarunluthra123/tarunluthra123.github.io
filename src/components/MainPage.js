@@ -15,7 +15,6 @@ class MainPage extends Component {
     this.projectRef = React.createRef();
     this.achievementRef = React.createRef();
     this.contactRef = React.createRef();
-    this.resumePdfRef = React.createRef();
     this.burgerRef = React.createRef();
     this.blogsRef = React.createRef();
   }
@@ -30,7 +29,6 @@ class MainPage extends Component {
     this.projectRef.current.classList.toggle("fade");
     this.achievementRef.current.classList.toggle("fade");
     this.contactRef.current.classList.toggle("fade");
-    this.resumePdfRef.current.classList.toggle("fade");
     this.blogsRef.current.classList.toggle("fade");
     this.burgerRef.current.classList.toggle("toggle");
   };
@@ -95,17 +93,6 @@ class MainPage extends Component {
                 onClick={this.toggleBurgerMenu}
               >
                 Blogs
-              </a>
-            </li>
-            <li ref={this.resumePdfRef}>
-              <a
-                href={"https://resume.tarunluthra.in/"}
-                className="navLinkItem"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={this.toggleBurgerMenu}
-              >
-                Résumé PDF
               </a>
             </li>
           </ul>
