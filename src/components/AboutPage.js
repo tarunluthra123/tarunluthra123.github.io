@@ -83,7 +83,7 @@ const AboutPage = (props) => {
                             <a href="https://github.com/tarunluthra123" target="_blank" rel="noopener noreferrer" style={{ "color":"white"}}>
                                 <Icon name='github' size={iconWidth()}></Icon>
                             </a>
-                            <a href="mailto:tarunluthra987@gmail.com" style={{ "color":"white"}}>
+                            <a href="mailto:tarunluthra@protonmail.com" style={{ "color":"white"}}>
                                 <Icon name='mail' size={iconWidth()}></Icon>
                             </a>
                             <a href="https://www.linkedin.com/in/tarunluthra123/" target="_blank" rel="noopener noreferrer" style={{ "color":"white"}}>

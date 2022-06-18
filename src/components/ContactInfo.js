@@ -2,7 +2,7 @@ import React from 'react';
 import ContactForm from "./ContactForm";
 import GithubLogo from '../assets/contact_images/github_logo_2.png';
 import LinkedinLogo from '../assets/contact_images/linkedin_logo.png';
-import GmailLogo from '../assets/contact_images/gmail_logo.png';
+import MailIcon from '../assets/contact_images/mail.png';
 
 const ContactInfo = (props) => {
     return (
@@ -24,8 +24,8 @@ const ContactInfo = (props) => {
                         <a href="https://www.linkedin.com/in/tarunluthra123/" target="_blank" rel="noopener noreferrer">
                             <img src={LinkedinLogo} height={50} className="m-2" alt={"Linkedin"}/>
                         </a>
-                        <a href="mailto:tarunluthra987@gmail.com">
-                            <img src={GmailLogo} height={50} className="m-2" alt={"Mail"}/>
+                        <a href="mailto:tarunluthra@protonmail.com">
+                            <img src={MailIcon} height={40} className="m-2" alt={"Mail"}/>
                         </a>
                     </div>
                     <div className="col-md-2 col-sm-1 col-1"/>
