@@ -86,13 +86,13 @@ class MainPage extends Component {
             </li>
             <li ref={this.blogsRef}>
               <a
-                href={"https://blogs.tarunluthra.in/"}
+                href={"https://blog.tarunluthra.in/"}
                 className="navLinkItem"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={this.toggleBurgerMenu}
               >
-                Blogs
+                Blog
               </a>
             </li>
           </ul>
