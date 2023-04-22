@@ -27,14 +27,14 @@
         "title": "Kollab Space",
         "description": "A collab app for students,teachers and colleagues to interact, share and collaborate ideas in a simplified manner and work together with increased productivity in a sophisticated environment",
         "githubUrl": "https://github.com/tarunluthra123/Kollab-Space",
-        "projectUrl": "https://kollab-space.herokuapp.com/",
+        "projectUrl": "https://kollab-space.onrender.com",
         "imageUrl": "kollab_space_gif.gif",
         "technologies": [
             "Typescript",
             "React",
             "Express",
             "Socket.io",
-            "JWTs",
+            "JWT",
             "PostgreSQL",
             "Semantic UI CSS"
         ]
@@ -50,7 +50,7 @@
             "Tailwind CSS",
             "Redux",
             "Express",
-            "MongoDB",
+            "PostgreSQL",
             "JWT"
         ]
     },
